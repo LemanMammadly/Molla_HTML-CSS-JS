@@ -356,12 +356,13 @@ header .middle-header .all-middle-header .right-middle-header .cart .cart-count 
     display: block;
     position: absolute;
     top: 0 !important;
-    left: 0;
+    left: -45vh;
     z-index: 33333;
     background-color: #fff;
-    width: 50vh !important;
+    width: 45vh !important;
     resize: both;
     height: 100vh;
+    transition: left 0.1s ease;
   }
   header .middle-header .menu-mobile-sidebar .x-logo-div {
     text-align: end;
@@ -372,13 +373,13 @@ header .middle-header .all-middle-header .right-middle-header .cart .cart-count 
     color: #bdbdbd;
   }
   header .middle-header .menu-mobile-sidebar .search-div-sidebar {
-    width: 70%;
+    width: 65%;
     margin: auto;
   }
   header .middle-header .menu-mobile-sidebar .search-div-sidebar .input-search-sidebar {
     border: 1px solid #d1d1d1;
     outline: none;
-    padding: 9px 30px;
+    padding: 9px 35px;
     width: 100%;
   }
   header .middle-header .menu-mobile-sidebar .search-div-sidebar .input-search-sidebar:focus {
@@ -392,18 +393,52 @@ header .middle-header .all-middle-header .right-middle-header .cart .cart-count 
   }
   header .middle-header .menu-mobile-sidebar .tabs-sidebar .tabcontent {
     display: none;
-    padding: 6px 12px;
+    padding: 6px 0;
     border-top: none;
     text-align: center;
   }
+  header .middle-header .menu-mobile-sidebar .tabs-sidebar .tabcontent hr {
+    margin: 0;
+    padding: 0;
+    color: #898686;
+  }
+  header .middle-header .menu-mobile-sidebar .tabs-sidebar .tabcontent .tab1-icons {
+    margin-top: 30px;
+  }
+  header .middle-header .menu-mobile-sidebar .tabs-sidebar .tabcontent .tab1-icons .all-tab1-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  header .middle-header .menu-mobile-sidebar .tabs-sidebar .tabcontent .tab1-icons .all-tab1-icons a {
+    text-decoration: none;
+    color: #808080;
+    padding: 19px;
+    border: 1px solid #808080;
+    border-radius: 50%;
+    position: relative;
+  }
+  header .middle-header .menu-mobile-sidebar .tabs-sidebar .tabcontent .tab1-icons .all-tab1-icons a:hover {
+    color: #d19c40;
+    transition: 0.5s;
+  }
+  header .middle-header .menu-mobile-sidebar .tabs-sidebar .tabcontent .tab1-icons .all-tab1-icons a i {
+    position: absolute;
+    top: 50%;
+    font-size: 14px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
   header .middle-header .menu-mobile-sidebar .tabs-sidebar .tabcontent .all-tab2 {
-    margin-top: 20px;
+    margin-top: 10px;
   }
   header .middle-header .menu-mobile-sidebar .tabs-sidebar .tabcontent .all-tab2 ul {
     list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 15px;
+    padding-left: 0;
   }
   header .middle-header .menu-mobile-sidebar .tabs-sidebar .tabcontent .all-tab2 ul li {
     text-align: left !important;
@@ -412,18 +447,26 @@ header .middle-header .all-middle-header .right-middle-header .cart .cart-count 
     text-decoration: none;
     color: #666;
     font-weight: 200;
-    font-size: 20px;
+    font-size: 17px;
+    padding-left: 30px;
   }
   header .middle-header .menu-mobile-sidebar .tabs-sidebar .tabcontent .all-tab2 ul li a:hover {
     color: #d19c40;
     transition: 0.5s;
   }
-  header .middle-header .menu-mobile-sidebar .tabs-sidebar .tabcontent .accordion {
-    margin-top: 25px;
+  header .middle-header .menu-mobile-sidebar .tabs-sidebar .tabcontent .all-tab2 ul hr {
+    margin: 0;
+    padding: 0;
+    color: #898686;
+  }
+  header .middle-header .menu-mobile-sidebar .tabs-sidebar .tabcontent .accordion .accordion-item {
+    border: none !important;
+    outline: none !important;
   }
   header .middle-header .menu-mobile-sidebar .tabs-sidebar .tabcontent .accordion .accordion-button {
     font-weight: 200;
     color: #666;
+    padding-left: 30px;
   }
   header .middle-header .menu-mobile-sidebar .tabs-sidebar .tabcontent .accordion .accordion-button:not(.collapsed) {
     border: none !important;
@@ -443,9 +486,17 @@ header .middle-header .all-middle-header .right-middle-header .cart .cart-count 
     gap: 25px;
   }
   header .middle-header .menu-mobile-sidebar .tabs-sidebar .tabcontent .accordion .accordion-body ul li {
-    color: #666;
     text-align: left;
+  }
+  header .middle-header .menu-mobile-sidebar .tabs-sidebar .tabcontent .accordion .accordion-body ul li a {
+    text-decoration: none;
+    color: #666;
     font-weight: 200;
+    padding: 0 30px;
+  }
+  header .middle-header .menu-mobile-sidebar .tabs-sidebar .tabcontent .accordion .accordion-body ul li a:hover {
+    color: #d19c40;
+    transition: 0.5s;
   }
   header .middle-header .menu-mobile-sidebar .tabs-sidebar .tab {
     overflow: hidden;

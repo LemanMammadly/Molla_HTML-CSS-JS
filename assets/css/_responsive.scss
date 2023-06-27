@@ -21,12 +21,13 @@
         display: block;
         position: absolute;
         top: 0 !important;
-        left: 0;
+        left: -45vh;
         z-index: 33333;
         background-color: #fff;
-        width: 50vh !important;
+        width: 45vh !important;
         resize: both;
         height: 100vh;
+        transition: left .1s ease;
         .x-logo-div {
           text-align: end;
           padding: 25px;
@@ -36,13 +37,13 @@
           }
         }
         .search-div-sidebar {
-          width: 70%;
+          width: 65%;
           margin: auto;
 
           .input-search-sidebar {
             border: 1px solid #d1d1d1;
             outline: none;
-            padding: 9px 30px;
+            padding: 9px 35px;
             width: 100%;
             &:focus {
               border-color: #d19c40;
@@ -58,36 +59,81 @@
         .tabs-sidebar {
           .tabcontent {
             display: none;
-            padding: 6px 12px;
+            padding: 6px 0;
             border-top: none;
             text-align: center;
-            .all-tab2 {
-              margin-top: 20px;
-              ul {
-                list-style: none;
+            hr {
+              margin: 0;
+              padding: 0;
+              color: #898686;
+            }
+            .tab1-icons {
+              margin-top: 30px;
+              .all-tab1-icons {
                 display: flex;
-                flex-direction: column;
-                gap: 25px;
-                li {
-                    text-align: left !important;
-                  a {
-                    text-decoration: none;
-                    color: #666;
-                    font-weight: 200;
-                    font-size: 20px;
-                    &:hover{
-                        color: #d19c40;
-                        transition: .5s;
-                    }
+                align-items: center;
+                justify-content: center;
+                gap: 20px;
+                a {
+                  text-decoration: none;
+                  color: #808080;
+                  padding: 19px;
+                  border: 1px solid #808080;
+                  border-radius: 50%;
+                  position: relative;
+                  &:hover {
+                    color: #d19c40;
+                    transition: 0.5s;
+                  }
+                  i {
+                    position: absolute;
+                    top: 50%;
+                    font-size: 14px;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
                   }
                 }
               }
             }
+            .all-tab2 {
+              margin-top: 10px;
+              ul {
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                padding-left: 0;
+               
+                li {
+                  text-align: left !important;
+                  a {
+                    text-decoration: none;
+                    color: #666;
+                    font-weight: 200;
+                    font-size: 17px;
+                    padding-left: 30px;
+                    &:hover {
+                      color: #d19c40;
+                      transition: 0.5s;
+                    }
+                  }
+                }
+                hr {
+                  margin: 0;
+                  padding: 0;
+                  color: #898686;
+                }
+              }
+            }
             .accordion {
-              margin-top: 25px;
+              .accordion-item {
+                border: none !important;
+                outline: none !important;
+              }
               .accordion-button {
                 font-weight: 200;
                 color: #666;
+                padding-left: 30px;
                 &:not(.collapsed) {
                   border: none !important;
                   color: #d19c40;
@@ -107,9 +153,17 @@
                   flex-direction: column;
                   gap: 25px;
                   li {
-                    color: #666;
                     text-align: left;
-                    font-weight: 200;
+                    a {
+                      text-decoration: none;
+                      color: #666;
+                      font-weight: 200;
+                      padding: 0 30px;
+                      &:hover {
+                        color: #d19c40;
+                        transition: 0.5s;
+                      }
+                    }
                   }
                 }
               }
@@ -132,7 +186,6 @@
               font-weight: 600;
             }
             .active {
-              //   border-bottom: 2px solid #d19c40;
               color: #d19c40 !important;
               z-index: 44444;
               position: relative;
