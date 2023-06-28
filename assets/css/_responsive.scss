@@ -222,7 +222,25 @@
         }
       }
     }
+    .bottom-header{
+      display: none;
+    }
   }
+
+  .slider-section{
+    .container {
+      max-width: inherit;
+      padding: inherit !important;
+      margin: inherit;
+      padding: 10px 15px !important;
+      .all-right-slider-section{
+        img{
+          width: 100%;
+        }
+      }
+    }
+  }
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -256,6 +274,12 @@
     }
   }
 }
+
+@media only screen and (max-width: 576px) {
+
+}
+
+
 
 @media only screen and (max-width: 380px) {
   header {
