@@ -22,7 +22,17 @@
       rel="stylesheet"
       href="https://unpkg.com/flickity@2/dist/flickity.min.css"
     />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
     <link rel="stylesheet" href="/assets/css/index.css" />
     <title>Molla</title>
   </head>
@@ -912,22 +922,30 @@
     <section class="slider-section p-4">
       <div class="container">
         <div class="all-slider-section row justify-content-between">
-          <div class="left-slider-section col-lg-8 col-md-7">
+          <div class="left-slider-section col-lg-8 col-12">
             <div class="carousel" data-flickity>
               <div class="first-img-div">
                 <img
                   class="carousel-cell img-1"
                   src="https://d-themes.com/react/molla/demo-3/images/home/sliders/slide-1.jpg"
                 />
-                <div class="img-1-text" data-aos="fade-up" data-aos-duration="3000">
-                  <div  class="all-img1-text d-flex flex-column gap-2">
+                <div
+                  class="img-1-text"
+                  data-aos="fade-up"
+                  data-aos-duration="3000"
+                >
+                  <div class="all-img1-text d-flex flex-column gap-2">
                     <span class="img1-span">Daily Deals</span>
                     <h1 class="img1-h1">
                       AirPods <br />
                       Earphones
                     </h1>
                     <div class="all-price">
-                      <span class="img1-price"><sup class="img1-today">Today:</sup>$247<sup>.99</sup></span>
+                      <span class="img1-price"
+                        ><sup class="img1-today">Today:</sup>$247<sup
+                          >.99</sup
+                        ></span
+                      >
                     </div>
                     <a href="" class="click-btn-a"
                       >Click Here <i class="fa-solid fa-arrow-right-long"></i
@@ -937,73 +955,1421 @@
               </div>
               <div class="second-img-div">
                 <img
-                class="carousel-cell img-2"
-                src="https://d-themes.com/react/molla/demo-3/images/home/sliders/slide-2.jpg"
-              />
-              <div class="img-2-text" data-aos="fade-up" data-aos-duration="3000">
-                <div  class="all-img2-text d-flex flex-column gap-2">
-                  <span class="img2-span">Deals and Promotions</span>
-                  <h1 class="img2-h1">
-                    Ercho Dot <br />
-                    3rd Gen
-                  </h1>
-                  <div class="all-price">
-                    <span class="img2-price"><sup class="img2-today"  style="text-decoration: line-through;">&49.99</sup>$29<sup>.99</sup></span>
+                  class="carousel-cell img-2"
+                  src="https://d-themes.com/react/molla/demo-3/images/home/sliders/slide-2.jpg"
+                />
+                <div
+                  class="img-2-text"
+                  data-aos="fade-up"
+                  data-aos-duration="3000"
+                >
+                  <div class="all-img2-text d-flex flex-column gap-2">
+                    <span class="img2-span">Deals and Promotions</span>
+                    <h1 class="img2-h1">
+                      Ercho Dot <br />
+                      3rd Gen
+                    </h1>
+                    <div class="all-price">
+                      <span class="img2-price"
+                        ><sup
+                          class="img2-today"
+                          style="text-decoration: line-through"
+                          >&49.99</sup
+                        >$29<sup>.99</sup></span
+                      >
+                    </div>
+                    <a href="" class="click-btn-a"
+                      >Click Here <i class="fa-solid fa-arrow-right-long"></i
+                    ></a>
                   </div>
-                  <a href="" class="click-btn-a"
-                    >Click Here <i class="fa-solid fa-arrow-right-long"></i
-                  ></a>
                 </div>
-              </div>
               </div>
             </div>
           </div>
-            <div class="all-right-slider-section d-flex justify-content-end  col-lg-4 col-md-5">
-             <div class="slider-right-all-section d-flex flex-column gap-3">
+          <div
+            class="all-right-slider-section d-flex justify-content-end col-lg-4 col-12"
+          >
+            <div
+              class="slider-right-all-section d-flex flex-column justify-content-between gap-2"
+            >
               <div class="top-slider-section">
-                <img src="https://d-themes.com/react/molla/demo-3/images/home/banners/banner-1.jpg" alt="">
-                <div class="right-top-slider-text  d-flex flex-column">
+                <img
+                  src="https://d-themes.com/react/molla/demo-3/images/home/banners/banner-1.jpg"
+                  alt=""
+                />
+                <div class="right-top-slider-text col-lg-12">
                   <span class="right-span-slider">Top Product</span>
-                  <p class="edif-slider-right">Edifier <br> Stereo Bluetooth</p>
-                  <a class="shop-slider-btn" href="">Shop Now <i class="fa-solid fa-arrow-right-long"></i></a>
+                  <p class="edif-slider-right">
+                    Edifier <br />
+                    Stereo Bluetooth
+                  </p>
+                  <a class="shop-slider-btn" href=""
+                    >Shop Now <i class="fa-solid fa-arrow-right-long"></i
+                  ></a>
                 </div>
               </div>
               <div class="center-slider-section">
-                <img src="https://d-themes.com/react/molla/demo-3/images/home/banners/banner-2.jpg" alt="">
-                <div class="right-center-slider-text d-flex flex-column">
+                <img
+                  src="https://d-themes.com/react/molla/demo-3/images/home/banners/banner-2.jpg"
+                  alt=""
+                />
+                <div class="right-center-slider-text col-lg-12">
                   <span class="right-center-span-slider-1">Clearance</span>
                   <p class="edif-center-slider-right">Go Pro - Fushion 360</p>
                   <span class="right-center-span-slider-2">Save $70</span>
-                  <a class="shop-center-slider-btn" href="">Shop Now <i class="fa-solid fa-arrow-right-long"></i></a>
+                  <a class="shop-center-slider-btn" href=""
+                    >Shop Now <i class="fa-solid fa-arrow-right-long"></i
+                  ></a>
                 </div>
               </div>
               <div class="bottom-slider-section">
-                <img src="https://d-themes.com/react/molla/demo-3/images/home/banners/banner-3.jpg" alt="">
-                <div class="right-bottom-slider-text d-flex flex-column">
+                <img
+                  src="https://d-themes.com/react/molla/demo-3/images/home/banners/banner-3.jpg"
+                  alt=""
+                />
+                <div class="right-bottom-slider-text col-lg-12">
                   <span class="right-bottom-span-slider">Featured</span>
                   <p class="edif-bottom-slider-right">Apple Watch 4</p>
-                  <span class="right-bottom-span-slider-2">Our Hottest Deals</span>
-                  <a class="shop-bottom-slider-btn" href="">Shop Now <i class="fa-solid fa-arrow-right-long"></i></a>
+                  <span class="right-bottom-span-slider-2"
+                    >Our Hottest Deals</span
+                  >
+                  <a class="shop-bottom-slider-btn" href=""
+                    >Shop Now <i class="fa-solid fa-arrow-right-long"></i
+                  ></a>
                 </div>
               </div>
-             </div>
             </div>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- Slider Section END -->
+
+    <!-- Tab Featured Section START -->
+
+    <section class="featured p-4">
+      <div class="container">
+        <div class="all-featured">
+          <div class="all-featured-tab">
+            <button
+              class="tablinks-featured active"
+              onclick="openTab1(event, 'tabs1')"
+            >
+              Featured
+            </button>
+            <button
+              class="tablinks-featured"
+              onclick="openTab1(event, 'tabs2')"
+            >
+              On Sale
+            </button>
+            <button
+              class="tablinks-featured"
+              onclick="openTab1(event, 'tabs3')"
+            >
+              Top Rated
+            </button>
+          </div>
+
+          <div id="tabs1" class="tabcontent">
+            <div class="owl-carousel owl-theme">
+              <div class="item">
+                <div class="all-box-item">
+                  <div class="top-box-item">
+                    <div class="main-img-item">
+                      <img
+                        class="img-fluid slider-hover-img"
+                        style="cursor: pointer"
+                        src="https://d-themes.com/react_asset_api/molla/uploads/product_5_1_300x300_3dbc9b1611.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="all-sec-hover">
+                      <div
+                        class="basket-sec-hover d-flex align-items-center justify-content-evenly"
+                      >
+                        <div class="left-basket-hover">
+                          <i class="fa-solid fa-cart-plus"></i>
+                        </div>
+                        <hr class="hr-basket-hover" />
+                        <div class="right-basket-hover">
+                          <i class="fa-solid fa-gamepad"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="whislist-icon">
+                      <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <span class="whislist-text">add to whislist</span>
+                    <div class="new-top">
+                      <div class="new-pos-box-item">
+                        <span class="pos-new">New</span>
+                      </div>
+                      <div class="top-pos-box-item">
+                        <span class="pos-top">Top</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="bottom-box-item">
+                    <p class="bottom-box-p">
+                      Accessories, Video Games, Entertainment
+                    </p>
+                    <h3 class="bottom-box-title">
+                      Microsoft – Refurbish Xbox One S 500GB
+                    </h3>
+                    <span class="bottom-box-price">$ 279.99</span>
+                    <div class="bottom-box-rates">
+                      <span
+                        ><i class="fa-regular fa-star"></i
+                        ><i class="fa-regular fa-star"></i
+                        ><i class="fa-regular fa-star"></i
+                        ><i class="fa-regular fa-star"></i
+                        ><i class="fa-regular fa-star"></i
+                      ></span>
+                      <span class="bottom-box-review">(2 Reviews)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item">
+                  <div class="all-box-item">
+                    <div class="top-box-item">
+                      <div class="main-img-item">
+                        <img
+                          class="img-fluid slider-hover-img"
+                          style="cursor: pointer"
+                          src="https://d-themes.com/react_asset_api/molla/uploads/product_5_1_300x300_3dbc9b1611.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="all-sec-hover">
+                        <div
+                          class="basket-sec-hover d-flex align-items-center justify-content-evenly"
+                        >
+                          <div class="left-basket-hover">
+                            <i class="fa-solid fa-cart-plus"></i>
+                          </div>
+                          <hr class="hr-basket-hover" />
+                          <div class="right-basket-hover">
+                            <i class="fa-solid fa-gamepad"></i>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="whislist-icon">
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                      <span class="whislist-text">add to whislist</span>
+                      <div class="new-top">
+                        <div class="new-pos-box-item">
+                          <span class="pos-new">New</span>
+                        </div>
+                        <div class="top-pos-box-item">
+                          <span class="pos-top">Top</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="bottom-box-item">
+                      <p class="bottom-box-p">
+                        Accessories, Video Games, Entertainment
+                      </p>
+                      <h3 class="bottom-box-title">
+                        Microsoft – Refurbish Xbox One S 500GB
+                      </h3>
+                      <span class="bottom-box-price">$ 279.99</span>
+                      <div class="bottom-box-rates">
+                        <span
+                          ><i class="fa-regular fa-star"></i
+                          ><i class="fa-regular fa-star"></i
+                          ><i class="fa-regular fa-star"></i
+                          ><i class="fa-regular fa-star"></i
+                          ><i class="fa-regular fa-star"></i
+                        ></span>
+                        <span class="bottom-box-review">(2 Reviews)</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item">
+                  <div class="all-box-item">
+                    <div class="top-box-item">
+                      <div class="main-img-item">
+                        <img
+                          class="img-fluid slider-hover-img"
+                          style="cursor: pointer"
+                          src="https://d-themes.com/react_asset_api/molla/uploads/product_5_1_300x300_3dbc9b1611.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="all-sec-hover">
+                        <div
+                          class="basket-sec-hover d-flex align-items-center justify-content-evenly"
+                        >
+                          <div class="left-basket-hover">
+                            <i class="fa-solid fa-cart-plus"></i>
+                          </div>
+                          <hr class="hr-basket-hover" />
+                          <div class="right-basket-hover">
+                            <i class="fa-solid fa-gamepad"></i>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="whislist-icon">
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                      <span class="whislist-text">add to whislist</span>
+                      <div class="new-top">
+                        <div class="new-pos-box-item">
+                          <span class="pos-new">New</span>
+                        </div>
+                        <div class="top-pos-box-item">
+                          <span class="pos-top">Top</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="bottom-box-item">
+                      <p class="bottom-box-p">
+                        Accessories, Video Games, Entertainment
+                      </p>
+                      <h3 class="bottom-box-title">
+                        Microsoft – Refurbish Xbox One S 500GB
+                      </h3>
+                      <span class="bottom-box-price">$ 279.99</span>
+                      <div class="bottom-box-rates">
+                        <span
+                          ><i class="fa-regular fa-star"></i
+                          ><i class="fa-regular fa-star"></i
+                          ><i class="fa-regular fa-star"></i
+                          ><i class="fa-regular fa-star"></i
+                          ><i class="fa-regular fa-star"></i
+                        ></span>
+                        <span class="bottom-box-review">(2 Reviews)</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item">
+                  <div class="all-box-item">
+                    <div class="top-box-item">
+                      <div class="main-img-item">
+                        <img
+                          class="img-fluid slider-hover-img"
+                          style="cursor: pointer"
+                          src="https://d-themes.com/react_asset_api/molla/uploads/product_5_1_300x300_3dbc9b1611.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="all-sec-hover">
+                        <div
+                          class="basket-sec-hover d-flex align-items-center justify-content-evenly"
+                        >
+                          <div class="left-basket-hover">
+                            <i class="fa-solid fa-cart-plus"></i>
+                          </div>
+                          <hr class="hr-basket-hover" />
+                          <div class="right-basket-hover">
+                            <i class="fa-solid fa-gamepad"></i>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="whislist-icon">
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                      <span class="whislist-text">add to whislist</span>
+                      <div class="new-top">
+                        <div class="new-pos-box-item">
+                          <span class="pos-new">New</span>
+                        </div>
+                        <div class="top-pos-box-item">
+                          <span class="pos-top">Top</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="bottom-box-item">
+                      <p class="bottom-box-p">
+                        Accessories, Video Games, Entertainment
+                      </p>
+                      <h3 class="bottom-box-title">
+                        Microsoft – Refurbish Xbox One S 500GB
+                      </h3>
+                      <span class="bottom-box-price">$ 279.99</span>
+                      <div class="bottom-box-rates">
+                        <span
+                          ><i class="fa-regular fa-star"></i
+                          ><i class="fa-regular fa-star"></i
+                          ><i class="fa-regular fa-star"></i
+                          ><i class="fa-regular fa-star"></i
+                          ><i class="fa-regular fa-star"></i
+                        ></span>
+                        <span class="bottom-box-review">(2 Reviews)</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item">
+                  <div class="all-box-item">
+                    <div class="top-box-item">
+                      <div class="main-img-item">
+                        <img
+                          class="img-fluid slider-hover-img"
+                          style="cursor: pointer"
+                          src="https://d-themes.com/react_asset_api/molla/uploads/product_5_1_300x300_3dbc9b1611.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="all-sec-hover">
+                        <div
+                          class="basket-sec-hover d-flex align-items-center justify-content-evenly"
+                        >
+                          <div class="left-basket-hover">
+                            <i class="fa-solid fa-cart-plus"></i>
+                          </div>
+                          <hr class="hr-basket-hover" />
+                          <div class="right-basket-hover">
+                            <i class="fa-solid fa-gamepad"></i>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="whislist-icon">
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                      <span class="whislist-text">add to whislist</span>
+                      <div class="new-top">
+                        <div class="new-pos-box-item">
+                          <span class="pos-new">New</span>
+                        </div>
+                        <div class="top-pos-box-item">
+                          <span class="pos-top">Top</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="bottom-box-item">
+                      <p class="bottom-box-p">
+                        Accessories, Video Games, Entertainment
+                      </p>
+                      <h3 class="bottom-box-title">
+                        Microsoft – Refurbish Xbox One S 500GB
+                      </h3>
+                      <span class="bottom-box-price">$ 279.99</span>
+                      <div class="bottom-box-rates">
+                        <span
+                          ><i class="fa-regular fa-star"></i
+                          ><i class="fa-regular fa-star"></i
+                          ><i class="fa-regular fa-star"></i
+                          ><i class="fa-regular fa-star"></i
+                          ><i class="fa-regular fa-star"></i
+                        ></span>
+                        <span class="bottom-box-review">(2 Reviews)</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item">
+                  <div class="all-box-item">
+                    <div class="top-box-item">
+                      <div class="main-img-item">
+                        <img
+                          class="img-fluid slider-hover-img"
+                          style="cursor: pointer"
+                          src="https://d-themes.com/react_asset_api/molla/uploads/product_5_1_300x300_3dbc9b1611.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="all-sec-hover">
+                        <div
+                          class="basket-sec-hover d-flex align-items-center justify-content-evenly"
+                        >
+                          <div class="left-basket-hover">
+                            <i class="fa-solid fa-cart-plus"></i>
+                          </div>
+                          <hr class="hr-basket-hover" />
+                          <div class="right-basket-hover">
+                            <i class="fa-solid fa-gamepad"></i>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="whislist-icon">
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                      <span class="whislist-text">add to whislist</span>
+                      <div class="new-top">
+                        <div class="new-pos-box-item">
+                          <span class="pos-new">New</span>
+                        </div>
+                        <div class="top-pos-box-item">
+                          <span class="pos-top">Top</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="bottom-box-item">
+                      <p class="bottom-box-p">
+                        Accessories, Video Games, Entertainment
+                      </p>
+                      <h3 class="bottom-box-title">
+                        Microsoft – Refurbish Xbox One S 500GB
+                      </h3>
+                      <span class="bottom-box-price">$ 279.99</span>
+                      <div class="bottom-box-rates">
+                        <span
+                          ><i class="fa-regular fa-star"></i
+                          ><i class="fa-regular fa-star"></i
+                          ><i class="fa-regular fa-star"></i
+                          ><i class="fa-regular fa-star"></i
+                          ><i class="fa-regular fa-star"></i
+                        ></span>
+                        <span class="bottom-box-review">(2 Reviews)</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="tabs2" class="tabcontent">
+            <div class="owl-carousel owl-theme">
+              <div class="item">
+                <div class="all-box-item">
+                  <div class="top-box-item">
+                    <div class="main-img-item">
+                      <img
+                        class="img-fluid slider-hover-img"
+                        style="cursor: pointer"
+                        src="https://d-themes.com/react_asset_api/molla/uploads/product_5_1_300x300_3dbc9b1611.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="all-sec-hover">
+                      <div
+                        class="basket-sec-hover d-flex align-items-center justify-content-evenly"
+                      >
+                        <div class="left-basket-hover">
+                          <i class="fa-solid fa-cart-plus"></i>
+                        </div>
+                        <hr class="hr-basket-hover" />
+                        <div class="right-basket-hover">
+                          <i class="fa-solid fa-gamepad"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="whislist-icon">
+                      <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <span class="whislist-text">add to whislist</span>
+                    <div class="new-top">
+                      <div class="new-pos-box-item">
+                        <span class="pos-new">New</span>
+                      </div>
+                      <div class="top-pos-box-item">
+                        <span class="pos-top">Top</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="bottom-box-item">
+                    <p class="bottom-box-p">
+                      Accessories, Video Games, Entertainment
+                    </p>
+                    <h3 class="bottom-box-title">
+                      Microsoft – Refurbish Xbox One S 500GB
+                    </h3>
+                    <span class="bottom-box-price">$ 279.99</span>
+                    <div class="bottom-box-rates">
+                      <span
+                        ><i class="fa-regular fa-star"></i
+                        ><i class="fa-regular fa-star"></i
+                        ><i class="fa-regular fa-star"></i
+                        ><i class="fa-regular fa-star"></i
+                        ><i class="fa-regular fa-star"></i
+                      ></span>
+                      <span class="bottom-box-review">(2 Reviews)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item">
+                  <div class="all-box-item">
+                    <div class="top-box-item">
+                      <div class="main-img-item">
+                        <img
+                          class="img-fluid slider-hover-img"
+                          style="cursor: pointer"
+                          src="https://d-themes.com/react_asset_api/molla/uploads/product_5_1_300x300_3dbc9b1611.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="all-sec-hover">
+                        <div
+                          class="basket-sec-hover d-flex align-items-center justify-content-evenly"
+                        >
+                          <div class="left-basket-hover">
+                            <i class="fa-solid fa-cart-plus"></i>
+                          </div>
+                          <hr class="hr-basket-hover" />
+                          <div class="right-basket-hover">
+                            <i class="fa-solid fa-gamepad"></i>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="whislist-icon">
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                      <span class="whislist-text">add to whislist</span>
+                      <div class="new-top">
+                        <div class="new-pos-box-item">
+                          <span class="pos-new">New</span>
+                        </div>
+                        <div class="top-pos-box-item">
+                          <span class="pos-top">Top</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="bottom-box-item">
+                      <p class="bottom-box-p">
+                        Accessories, Video Games, Entertainment
+                      </p>
+                      <h3 class="bottom-box-title">
+                        Microsoft – Refurbish Xbox One S 500GB
+                      </h3>
+                      <span class="bottom-box-price">$ 279.99</span>
+                      <div class="bottom-box-rates">
+                        <span
+                          ><i class="fa-regular fa-star"></i
+                          ><i class="fa-regular fa-star"></i
+                          ><i class="fa-regular fa-star"></i
+                          ><i class="fa-regular fa-star"></i
+                          ><i class="fa-regular fa-star"></i
+                        ></span>
+                        <span class="bottom-box-review">(2 Reviews)</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item">
+                  <div class="all-box-item">
+                    <div class="top-box-item">
+                      <div class="main-img-item">
+                        <img
+                          class="img-fluid slider-hover-img"
+                          style="cursor: pointer"
+                          src="https://d-themes.com/react_asset_api/molla/uploads/product_5_1_300x300_3dbc9b1611.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="all-sec-hover">
+                        <div
+                          class="basket-sec-hover d-flex align-items-center justify-content-evenly"
+                        >
+                          <div class="left-basket-hover">
+                            <i class="fa-solid fa-cart-plus"></i>
+                          </div>
+                          <hr class="hr-basket-hover" />
+                          <div class="right-basket-hover">
+                            <i class="fa-solid fa-gamepad"></i>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="whislist-icon">
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                      <span class="whislist-text">add to whislist</span>
+                      <div class="new-top">
+                        <div class="new-pos-box-item">
+                          <span class="pos-new">New</span>
+                        </div>
+                        <div class="top-pos-box-item">
+                          <span class="pos-top">Top</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="bottom-box-item">
+                      <p class="bottom-box-p">
+                        Accessories, Video Games, Entertainment
+                      </p>
+                      <h3 class="bottom-box-title">
+                        Microsoft – Refurbish Xbox One S 500GB
+                      </h3>
+                      <span class="bottom-box-price">$ 279.99</span>
+                      <div class="bottom-box-rates">
+                        <span
+                          ><i class="fa-regular fa-star"></i
+                          ><i class="fa-regular fa-star"></i
+                          ><i class="fa-regular fa-star"></i
+                          ><i class="fa-regular fa-star"></i
+                          ><i class="fa-regular fa-star"></i
+                        ></span>
+                        <span class="bottom-box-review">(2 Reviews)</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item">
+                  <div class="all-box-item">
+                    <div class="top-box-item">
+                      <div class="main-img-item">
+                        <img
+                          class="img-fluid slider-hover-img"
+                          style="cursor: pointer"
+                          src="https://d-themes.com/react_asset_api/molla/uploads/product_5_1_300x300_3dbc9b1611.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="all-sec-hover">
+                        <div
+                          class="basket-sec-hover d-flex align-items-center justify-content-evenly"
+                        >
+                          <div class="left-basket-hover">
+                            <i class="fa-solid fa-cart-plus"></i>
+                          </div>
+                          <hr class="hr-basket-hover" />
+                          <div class="right-basket-hover">
+                            <i class="fa-solid fa-gamepad"></i>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="whislist-icon">
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                      <span class="whislist-text">add to whislist</span>
+                      <div class="new-top">
+                        <div class="new-pos-box-item">
+                          <span class="pos-new">New</span>
+                        </div>
+                        <div class="top-pos-box-item">
+                          <span class="pos-top">Top</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="bottom-box-item">
+                      <p class="bottom-box-p">
+                        Accessories, Video Games, Entertainment
+                      </p>
+                      <h3 class="bottom-box-title">
+                        Microsoft – Refurbish Xbox One S 500GB
+                      </h3>
+                      <span class="bottom-box-price">$ 279.99</span>
+                      <div class="bottom-box-rates">
+                        <span
+                          ><i class="fa-regular fa-star"></i
+                          ><i class="fa-regular fa-star"></i
+                          ><i class="fa-regular fa-star"></i
+                          ><i class="fa-regular fa-star"></i
+                          ><i class="fa-regular fa-star"></i
+                        ></span>
+                        <span class="bottom-box-review">(2 Reviews)</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item">
+                  <div class="all-box-item">
+                    <div class="top-box-item">
+                      <div class="main-img-item">
+                        <img
+                          class="img-fluid slider-hover-img"
+                          style="cursor: pointer"
+                          src="https://d-themes.com/react_asset_api/molla/uploads/product_5_1_300x300_3dbc9b1611.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="all-sec-hover">
+                        <div
+                          class="basket-sec-hover d-flex align-items-center justify-content-evenly"
+                        >
+                          <div class="left-basket-hover">
+                            <i class="fa-solid fa-cart-plus"></i>
+                          </div>
+                          <hr class="hr-basket-hover" />
+                          <div class="right-basket-hover">
+                            <i class="fa-solid fa-gamepad"></i>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="whislist-icon">
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                      <span class="whislist-text">add to whislist</span>
+                      <div class="new-top">
+                        <div class="new-pos-box-item">
+                          <span class="pos-new">New</span>
+                        </div>
+                        <div class="top-pos-box-item">
+                          <span class="pos-top">Top</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="bottom-box-item">
+                      <p class="bottom-box-p">
+                        Accessories, Video Games, Entertainment
+                      </p>
+                      <h3 class="bottom-box-title">
+                        Microsoft – Refurbish Xbox One S 500GB
+                      </h3>
+                      <span class="bottom-box-price">$ 279.99</span>
+                      <div class="bottom-box-rates">
+                        <span
+                          ><i class="fa-regular fa-star"></i
+                          ><i class="fa-regular fa-star"></i
+                          ><i class="fa-regular fa-star"></i
+                          ><i class="fa-regular fa-star"></i
+                          ><i class="fa-regular fa-star"></i
+                        ></span>
+                        <span class="bottom-box-review">(2 Reviews)</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item">
+                  <div class="all-box-item">
+                    <div class="top-box-item">
+                      <div class="main-img-item">
+                        <img
+                          class="img-fluid slider-hover-img"
+                          style="cursor: pointer"
+                          src="https://d-themes.com/react_asset_api/molla/uploads/product_5_1_300x300_3dbc9b1611.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="all-sec-hover">
+                        <div
+                          class="basket-sec-hover d-flex align-items-center justify-content-evenly"
+                        >
+                          <div class="left-basket-hover">
+                            <i class="fa-solid fa-cart-plus"></i>
+                          </div>
+                          <hr class="hr-basket-hover" />
+                          <div class="right-basket-hover">
+                            <i class="fa-solid fa-gamepad"></i>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="whislist-icon">
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                      <span class="whislist-text">add to whislist</span>
+                      <div class="new-top">
+                        <div class="new-pos-box-item">
+                          <span class="pos-new">New</span>
+                        </div>
+                        <div class="top-pos-box-item">
+                          <span class="pos-top">Top</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="bottom-box-item">
+                      <p class="bottom-box-p">
+                        Accessories, Video Games, Entertainment
+                      </p>
+                      <h3 class="bottom-box-title">
+                        Microsoft – Refurbish Xbox One S 500GB
+                      </h3>
+                      <span class="bottom-box-price">$ 279.99</span>
+                      <div class="bottom-box-rates">
+                        <span
+                          ><i class="fa-regular fa-star"></i
+                          ><i class="fa-regular fa-star"></i
+                          ><i class="fa-regular fa-star"></i
+                          ><i class="fa-regular fa-star"></i
+                          ><i class="fa-regular fa-star"></i
+                        ></span>
+                        <span class="bottom-box-review">(2 Reviews)</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="tabs3" class="tabcontent">
+            <div class="owl-carousel owl-theme">
+              <div class="item">
+                <div class="all-box-item">
+                  <div class="top-box-item">
+                    <div class="main-img-item">
+                      <img
+                        class="img-fluid slider-hover-img"
+                        style="cursor: pointer"
+                        src="https://d-themes.com/react_asset_api/molla/uploads/product_5_1_300x300_3dbc9b1611.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="all-sec-hover">
+                      <div
+                        class="basket-sec-hover d-flex align-items-center justify-content-evenly"
+                      >
+                        <div class="left-basket-hover">
+                          <i class="fa-solid fa-cart-plus"></i>
+                        </div>
+                        <hr class="hr-basket-hover" />
+                        <div class="right-basket-hover">
+                          <i class="fa-solid fa-gamepad"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="whislist-icon">
+                      <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <span class="whislist-text">add to whislist</span>
+                    <div class="new-top">
+                      <div class="new-pos-box-item">
+                        <span class="pos-new">New</span>
+                      </div>
+                      <div class="top-pos-box-item">
+                        <span class="pos-top">Top</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="bottom-box-item">
+                    <p class="bottom-box-p">
+                      Accessories, Video Games, Entertainment
+                    </p>
+                    <h3 class="bottom-box-title">
+                      Microsoft – Refurbish Xbox One S 500GB
+                    </h3>
+                    <span class="bottom-box-price">$ 279.99</span>
+                    <div class="bottom-box-rates">
+                      <span
+                        ><i class="fa-regular fa-star"></i
+                        ><i class="fa-regular fa-star"></i
+                        ><i class="fa-regular fa-star"></i
+                        ><i class="fa-regular fa-star"></i
+                        ><i class="fa-regular fa-star"></i
+                      ></span>
+                      <span class="bottom-box-review">(2 Reviews)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="all-box-item">
+                  <div class="top-box-item">
+                    <div class="main-img-item">
+                      <img
+                        class="img-fluid slider-hover-img"
+                        style="cursor: pointer"
+                        src="https://d-themes.com/react_asset_api/molla/uploads/product_5_1_300x300_3dbc9b1611.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="all-sec-hover">
+                      <div
+                        class="basket-sec-hover d-flex align-items-center justify-content-evenly"
+                      >
+                        <div class="left-basket-hover">
+                          <i class="fa-solid fa-cart-plus"></i>
+                        </div>
+                        <hr class="hr-basket-hover" />
+                        <div class="right-basket-hover">
+                          <i class="fa-solid fa-gamepad"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="whislist-icon">
+                      <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <span class="whislist-text">add to whislist</span>
+                    <div class="new-top">
+                      <div class="new-pos-box-item">
+                        <span class="pos-new">New</span>
+                      </div>
+                      <div class="top-pos-box-item">
+                        <span class="pos-top">Top</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="bottom-box-item">
+                    <p class="bottom-box-p">
+                      Accessories, Video Games, Entertainment
+                    </p>
+                    <h3 class="bottom-box-title">
+                      Microsoft – Refurbish Xbox One S 500GB
+                    </h3>
+                    <span class="bottom-box-price">$ 279.99</span>
+                    <div class="bottom-box-rates">
+                      <span
+                        ><i class="fa-regular fa-star"></i
+                        ><i class="fa-regular fa-star"></i
+                        ><i class="fa-regular fa-star"></i
+                        ><i class="fa-regular fa-star"></i
+                        ><i class="fa-regular fa-star"></i
+                      ></span>
+                      <span class="bottom-box-review">(2 Reviews)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="all-box-item">
+                  <div class="top-box-item">
+                    <div class="main-img-item">
+                      <img
+                        class="img-fluid slider-hover-img"
+                        style="cursor: pointer"
+                        src="https://d-themes.com/react_asset_api/molla/uploads/product_5_1_300x300_3dbc9b1611.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="all-sec-hover">
+                      <div
+                        class="basket-sec-hover d-flex align-items-center justify-content-evenly"
+                      >
+                        <div class="left-basket-hover">
+                          <i class="fa-solid fa-cart-plus"></i>
+                        </div>
+                        <hr class="hr-basket-hover" />
+                        <div class="right-basket-hover">
+                          <i class="fa-solid fa-gamepad"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="whislist-icon">
+                      <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <span class="whislist-text">add to whislist</span>
+                    <div class="new-top">
+                      <div class="new-pos-box-item">
+                        <span class="pos-new">New</span>
+                      </div>
+                      <div class="top-pos-box-item">
+                        <span class="pos-top">Top</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="bottom-box-item">
+                    <p class="bottom-box-p">
+                      Accessories, Video Games, Entertainment
+                    </p>
+                    <h3 class="bottom-box-title">
+                      Microsoft – Refurbish Xbox One S 500GB
+                    </h3>
+                    <span class="bottom-box-price">$ 279.99</span>
+                    <div class="bottom-box-rates">
+                      <span
+                        ><i class="fa-regular fa-star"></i
+                        ><i class="fa-regular fa-star"></i
+                        ><i class="fa-regular fa-star"></i
+                        ><i class="fa-regular fa-star"></i
+                        ><i class="fa-regular fa-star"></i
+                      ></span>
+                      <span class="bottom-box-review">(2 Reviews)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="all-box-item">
+                  <div class="top-box-item">
+                    <div class="main-img-item">
+                      <img
+                        class="img-fluid slider-hover-img"
+                        style="cursor: pointer"
+                        src="https://d-themes.com/react_asset_api/molla/uploads/product_5_1_300x300_3dbc9b1611.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="all-sec-hover">
+                      <div
+                        class="basket-sec-hover d-flex align-items-center justify-content-evenly"
+                      >
+                        <div class="left-basket-hover">
+                          <i class="fa-solid fa-cart-plus"></i>
+                        </div>
+                        <hr class="hr-basket-hover" />
+                        <div class="right-basket-hover">
+                          <i class="fa-solid fa-gamepad"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="whislist-icon">
+                      <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <span class="whislist-text">add to whislist</span>
+                    <div class="new-top">
+                      <div class="new-pos-box-item">
+                        <span class="pos-new">New</span>
+                      </div>
+                      <div class="top-pos-box-item">
+                        <span class="pos-top">Top</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="bottom-box-item">
+                    <p class="bottom-box-p">
+                      Accessories, Video Games, Entertainment
+                    </p>
+                    <h3 class="bottom-box-title">
+                      Microsoft – Refurbish Xbox One S 500GB
+                    </h3>
+                    <span class="bottom-box-price">$ 279.99</span>
+                    <div class="bottom-box-rates">
+                      <span
+                        ><i class="fa-regular fa-star"></i
+                        ><i class="fa-regular fa-star"></i
+                        ><i class="fa-regular fa-star"></i
+                        ><i class="fa-regular fa-star"></i
+                        ><i class="fa-regular fa-star"></i
+                      ></span>
+                      <span class="bottom-box-review">(2 Reviews)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="all-box-item">
+                  <div class="top-box-item">
+                    <div class="main-img-item">
+                      <img
+                        class="img-fluid slider-hover-img"
+                        style="cursor: pointer"
+                        src="https://d-themes.com/react_asset_api/molla/uploads/product_5_1_300x300_3dbc9b1611.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="all-sec-hover">
+                      <div
+                        class="basket-sec-hover d-flex align-items-center justify-content-evenly"
+                      >
+                        <div class="left-basket-hover">
+                          <i class="fa-solid fa-cart-plus"></i>
+                        </div>
+                        <hr class="hr-basket-hover" />
+                        <div class="right-basket-hover">
+                          <i class="fa-solid fa-gamepad"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="whislist-icon">
+                      <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <span class="whislist-text">add to whislist</span>
+                    <div class="new-top">
+                      <div class="new-pos-box-item">
+                        <span class="pos-new">New</span>
+                      </div>
+                      <div class="top-pos-box-item">
+                        <span class="pos-top">Top</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="bottom-box-item">
+                    <p class="bottom-box-p">
+                      Accessories, Video Games, Entertainment
+                    </p>
+                    <h3 class="bottom-box-title">
+                      Microsoft – Refurbish Xbox One S 500GB
+                    </h3>
+                    <span class="bottom-box-price">$ 279.99</span>
+                    <div class="bottom-box-rates">
+                      <span
+                        ><i class="fa-regular fa-star"></i
+                        ><i class="fa-regular fa-star"></i
+                        ><i class="fa-regular fa-star"></i
+                        ><i class="fa-regular fa-star"></i
+                        ><i class="fa-regular fa-star"></i
+                      ></span>
+                      <span class="bottom-box-review">(2 Reviews)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="all-box-item">
+                  <div class="top-box-item">
+                    <div class="main-img-item">
+                      <img
+                        class="img-fluid slider-hover-img"
+                        style="cursor: pointer"
+                        src="https://d-themes.com/react_asset_api/molla/uploads/product_5_1_300x300_3dbc9b1611.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="all-sec-hover">
+                      <div
+                        class="basket-sec-hover d-flex align-items-center justify-content-evenly"
+                      >
+                        <div class="left-basket-hover">
+                          <i class="fa-solid fa-cart-plus"></i>
+                        </div>
+                        <hr class="hr-basket-hover" />
+                        <div class="right-basket-hover">
+                          <i class="fa-solid fa-gamepad"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="whislist-icon">
+                      <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <span class="whislist-text">add to whislist</span>
+                    <div class="new-top">
+                      <div class="new-pos-box-item">
+                        <span class="pos-new">New</span>
+                      </div>
+                      <div class="top-pos-box-item">
+                        <span class="pos-top">Top</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="bottom-box-item">
+                    <p class="bottom-box-p">
+                      Accessories, Video Games, Entertainment
+                    </p>
+                    <h3 class="bottom-box-title">
+                      Microsoft – Refurbish Xbox One S 500GB
+                    </h3>
+                    <span class="bottom-box-price">$ 279.99</span>
+                    <div class="bottom-box-rates">
+                      <span
+                        ><i class="fa-regular fa-star"></i
+                        ><i class="fa-regular fa-star"></i
+                        ><i class="fa-regular fa-star"></i
+                        ><i class="fa-regular fa-star"></i
+                        ><i class="fa-regular fa-star"></i
+                      ></span>
+                      <span class="bottom-box-review">(2 Reviews)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tab Featured Section END -->
+
+    <!-- Free Shipping Section START -->
+
+    <section class="shipping p-5">
+      <div class="container">
+        <div class="all-shipping">
+          <div
+            class="shipping-text d-flex align-items-center justify-content-evenly"
+          >
+            <div class="left-shipping-text d-flex flex-column text-end">
+              <span class="shipp-left-top">New Deals</span>
+              <span class="shipp-left-bottom">Start Daily at 12pm e.t.</span>
+            </div>
+            <hr class="shipping-hr" />
+            <div class="right-shipping-text d-flex gap-5">
+              <p>
+                Get
+                <span class="span-shipping-text"
+                  >FREE SHIPPING* & 5% rewards</span
+                >
+                on <br />every order with Molla Theme rewards program
+              </p>
+              <a class="shipping-a" href=""
+                >Add to Cart for $50.00/yr
+                <i class="fa-solid fa-arrow-right ms-3"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Free Shipping Section END -->
+
+    <!-- Deal Section START -->
+
+    <section class="deal p-5">
+      <div class="container">
+        <div class="all-deal">
+          <div class="top-deal mb-5">
+            <h3 class="top-deal-top">
+              Deals & Outlet
+            </h3>
+            <span class="top-deal-bottom">
+              today's deal and more
+            </span>
+          </div>
+          <div class="bottom-deal col-lg-12 d-flex">
+            <div class="left-bottom-deal d-flex flex-column col-lg-6">
+              <div class="all-deal-left-top">
+                <h2 class="all-deal-left-top-h2">Deal of the Day</h2>
+                <h4 class="all-deal-left-top-h4">Limited quantities.</h4>
+              </div>
+              <div class="all-deal-left-center">
+                <a class="all-deal-left-center-a" href="">Brown faux fur longline coat</a>
+                <div class="prod-price">
+                  <span  class="prod-price-1">$310.00</span>
+                  <span  class="prod-price-2">Was $190.00</span>
+                </div>
+                <a class="all-deal-left-center-a-shop" href="">Shop Now <i class="fa-solid fa-arrow-right ms-2"></i></a>
+              </div>
+              <div class="all-deal-left-bottom d-flex align-items-center gap-2">
+                <div class="countdown-section">
+                  <div class="count-amont">00</div>
+                  <div class="count-period">hours</div>
+                </div>
+                <span class="dots-dots">:</span>
+                <div class="countdown-section">
+                  <div class="count-amont">00</div>
+                  <div class="count-period">mins</div>
+                </div>
+                <span class="dots-dots">:</span>
+                <div class="countdown-section">
+                  <div class="count-amont">00</div>
+                  <div class="count-period">secs</div>
+                </div>
+              </div>
+            </div>
+            <div class="right-bottom-deal col-lg-6">
+              <div class="right-bottom-deal-left ">
+                <div class="all-box-item-deal">
+                  <div class="top-box-item-deal">
+                    <div class="main-img-item">
+                      <img
+                        class="img-fluid slider-hover-img"
+                        style="cursor: pointer"
+                        src="https://d-themes.com/react_asset_api/molla/uploads/product_5_1_300x300_3dbc9b1611.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="all-sec-hover">
+                      <div
+                        class="basket-sec-hover-deal d-flex align-items-center justify-content-evenly"
+                      >
+                        <div class="left-basket-hover">
+                          <i class="fa-solid fa-cart-plus"></i>
+                        </div>
+                        <hr class="hr-basket-hover" />
+                        <div class="right-basket-hover">
+                          <i class="fa-solid fa-gamepad"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="whislist-icon">
+                      <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <span class="whislist-text-deal">add to whislist</span>
+                    <div class="new-top-deal">
+                      <div class="new-pos-box-item">
+                        <span class="pos-new">New</span>
+                      </div>
+                      <div class="top-pos-box-item">
+                        <span class="pos-top">Top</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="bottom-box-item">
+                    <p class="bottom-box-p">
+                      Accessories, Video Games, Entertainment
+                    </p>
+                    <h3 class="bottom-box-title">
+                      Microsoft – Refurbish Xbox One S 500GB
+                    </h3>
+                    <span class="bottom-box-price">$ 279.99</span>
+                    <div class="bottom-box-rates">
+                      <span
+                        ><i class="fa-regular fa-star"></i
+                        ><i class="fa-regular fa-star"></i
+                        ><i class="fa-regular fa-star"></i
+                        ><i class="fa-regular fa-star"></i
+                        ><i class="fa-regular fa-star"></i
+                      ></span>
+                      <span class="bottom-box-review">(2 Reviews)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- <div class="right-bottom-deal-right">
+                <div class="all-box-item-deal">
+                  <div class="top-box-item">
+                    <div class="main-img-item">
+                      <img
+                        class="img-fluid slider-hover-img"
+                        style="cursor: pointer"
+                        src="https://d-themes.com/react_asset_api/molla/uploads/product_5_1_300x300_3dbc9b1611.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="all-sec-hover">
+                      <div
+                        class="basket-sec-hover d-flex align-items-center justify-content-evenly"
+                      >
+                        <div class="left-basket-hover">
+                          <i class="fa-solid fa-cart-plus"></i>
+                        </div>
+                        <hr class="hr-basket-hover" />
+                        <div class="right-basket-hover">
+                          <i class="fa-solid fa-gamepad"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="whislist-icon">
+                      <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <span class="whislist-text">add to whislist</span>
+                    <div class="new-top">
+                      <div class="new-pos-box-item">
+                        <span class="pos-new">New</span>
+                      </div>
+                      <div class="top-pos-box-item">
+                        <span class="pos-top">Top</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="bottom-box-item">
+                    <p class="bottom-box-p">
+                      Accessories, Video Games, Entertainment
+                    </p>
+                    <h3 class="bottom-box-title">
+                      Microsoft – Refurbish Xbox One S 500GB
+                    </h3>
+                    <span class="bottom-box-price">$ 279.99</span>
+                    <div class="bottom-box-rates">
+                      <span
+                        ><i class="fa-regular fa-star"></i
+                        ><i class="fa-regular fa-star"></i
+                        ><i class="fa-regular fa-star"></i
+                        ><i class="fa-regular fa-star"></i
+                        ><i class="fa-regular fa-star"></i
+                      ></span>
+                      <span class="bottom-box-review">(2 Reviews)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>  -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Deal Section END -->
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
       crossorigin="anonymous"
     ></script>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script> -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
+
     <script src="/js/index.js"></script>
   </body>
 </html>
