@@ -1400,6 +1400,140 @@ header .bottom-header .all-bottom-header .right-bottom-header .all-right-bottom-
   border-top: none;
   text-align: center;
 }
+.trending .all-trending .all-right-trending .right-bottom-deal .all-box-item-deal {
+  position: relative;
+}
+.trending .all-trending .all-right-trending .right-bottom-deal .all-box-item-deal .top-box-item-deal:hover .all-sec-hover {
+  opacity: 1;
+}
+.trending .all-trending .all-right-trending .right-bottom-deal .all-box-item-deal .top-box-item-deal:hover .whislist-icon {
+  opacity: 1;
+}
+.trending .all-trending .all-right-trending .right-bottom-deal .all-box-item-deal .top-box-item-deal .new-top-deal .new-pos-box-item {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  font-size: 13px;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #A5C76C;
+  padding: 15px 10px;
+  border-radius: 50%;
+}
+.trending .all-trending .all-right-trending .right-bottom-deal .all-box-item-deal .top-box-item-deal .new-top-deal .top-pos-box-item {
+  position: absolute;
+  top: 13%;
+  left: 5%;
+  font-size: 13px;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #7DD2EA;
+  padding: 15px 10px;
+  border-radius: 50%;
+}
+.trending .all-trending .all-right-trending .right-bottom-deal .all-box-item-deal .top-box-item-deal .all-sec-hover {
+  opacity: 0;
+  transition: 0.5s;
+}
+.trending .all-trending .all-right-trending .right-bottom-deal .all-box-item-deal .top-box-item-deal .all-sec-hover .basket-sec-hover-deal {
+  background-color: #333;
+  height: 40px;
+  width: 100%;
+}
+.trending .all-trending .all-right-trending .right-bottom-deal .all-box-item-deal .top-box-item-deal .all-sec-hover .basket-sec-hover-deal .left-basket-hover i {
+  color: #fff;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.trending .all-trending .all-right-trending .right-bottom-deal .all-box-item-deal .top-box-item-deal .all-sec-hover .basket-sec-hover-deal .left-basket-hover i:hover {
+  color: #fcb941;
+}
+.trending .all-trending .all-right-trending .right-bottom-deal .all-box-item-deal .top-box-item-deal .all-sec-hover .basket-sec-hover-deal .hr-basket-hover {
+  width: 2px;
+  margin: 0;
+  padding: 0;
+  height: 25px;
+  background-color: #fff;
+}
+.trending .all-trending .all-right-trending .right-bottom-deal .all-box-item-deal .top-box-item-deal .all-sec-hover .basket-sec-hover-deal .right-basket-hover i {
+  color: #fff;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.trending .all-trending .all-right-trending .right-bottom-deal .all-box-item-deal .top-box-item-deal .all-sec-hover .basket-sec-hover-deal .right-basket-hover i:hover {
+  color: #fcb941;
+}
+.trending .all-trending .all-right-trending .right-bottom-deal .all-box-item-deal .top-box-item-deal .whislist-icon {
+  transition: 0.5s;
+  opacity: 0;
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  background-color: #fcb941;
+  padding: 15px;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  z-index: 3333;
+  cursor: pointer;
+}
+.trending .all-trending .all-right-trending .right-bottom-deal .all-box-item-deal .top-box-item-deal .whislist-icon:hover + .whislist-text-deal {
+  opacity: 1;
+}
+.trending .all-trending .all-right-trending .right-bottom-deal .all-box-item-deal .top-box-item-deal .whislist-text-deal {
+  opacity: 0;
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  font-size: 12px;
+  background-color: #fcb941;
+  padding: 6px 30px 6px 5px;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+.trending .all-trending .all-right-trending .right-bottom-deal .all-box-item-deal .bottom-box-item {
+  padding: 5px;
+}
+.trending .all-trending .all-right-trending .right-bottom-deal .all-box-item-deal .bottom-box-item .bottom-box-p {
+  color: #ccc;
+  font-size: 13px;
+  margin-bottom: 0;
+  cursor: pointer;
+}
+.trending .all-trending .all-right-trending .right-bottom-deal .all-box-item-deal .bottom-box-item .bottom-box-title {
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+}
+.trending .all-trending .all-right-trending .right-bottom-deal .all-box-item-deal .bottom-box-item .bottom-box-price {
+  font-size: 16px;
+  color: #fcb941;
+}
+.trending .all-trending .all-right-trending .right-bottom-deal .all-box-item-deal .bottom-box-item .bottom-box-rates span i {
+  color: #ccc;
+  font-size: 13px;
+}
+.trending .all-trending .all-right-trending .right-bottom-deal .all-box-item-deal .bottom-box-item .bottom-box-rates .bottom-box-review {
+  color: #ccc;
+  font-size: 13px;
+}
+.trending .all-trending .all-right-trending .right-bottom-deal .right-bottom-deal-left {
+  background-color: #fff;
+}
+.trending .all-trending .all-right-trending .right-bottom-deal .right-bottom-deal-right {
+  background-color: #fff;
+}
 
 @media only screen and (max-width: 992px) {
   header .top-header .container {
@@ -1663,6 +1797,11 @@ header .bottom-header .all-bottom-header .right-bottom-header .all-right-bottom-
   }
   .trending .all-trending .all-left-trending .top-all-left-trend {
     text-align: center;
+  }
+  .trending .all-trending .tab-trending {
+    align-items: center !important;
+    justify-content: center !important;
+    flex-wrap: wrap !important;
   }
 }
 @media only screen and (max-width: 768px) {

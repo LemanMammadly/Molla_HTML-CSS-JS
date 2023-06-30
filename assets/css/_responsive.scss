@@ -287,11 +287,11 @@
           text-align: center;
         }
       }
-      // .tab-trending{
-      //   overflow: hidden;
-      //   text-align: center;
-      //   align-items: center;
-      // }
+      .tab-trending{
+        align-items: center !important;
+        justify-content: center !important;
+        flex-wrap: wrap !important;
+      }
     }
   }
 }
