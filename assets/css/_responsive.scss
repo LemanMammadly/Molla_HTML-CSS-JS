@@ -248,22 +248,22 @@
   }
   .shipping {
     .all-shipping {
-      .shipping-text{
+      .shipping-text {
         flex-direction: column;
         text-align: center;
         gap: 20px;
-        .left-shipping-text{
+        .left-shipping-text {
           text-align: center !important;
         }
       }
-      .shipping-hr{
+      .shipping-hr {
         display: none;
       }
-      .right-shipping-text{
+      .right-shipping-text {
         flex-direction: column;
         align-items: center !important;
         gap: 15px !important;
-        .shipping-a{
+        .shipping-a {
           width: 70%;
         }
       }
@@ -272,25 +272,55 @@
 
   .deal .bottom-deal {
     flex-direction: column;
-    .right-bottom-deal{
+    .right-bottom-deal {
       justify-content: center;
     }
   }
-  .trending{
-    .all-trending{
+  .trending {
+    .all-trending {
       flex-direction: column;
-      .all-left-trending{
-        .bottom-all-left-trend{
+      .all-left-trending {
+        .bottom-all-left-trend {
           display: none;
         }
-        .top-all-left-trend{
+        .top-all-left-trend {
           text-align: center;
         }
       }
-      .tab-trending{
+      .tab-trending {
         align-items: center !important;
         justify-content: center !important;
         flex-wrap: wrap !important;
+      }
+    }
+  }
+  .returns {
+    .all-returs {
+      row-gap: 30px;
+    }
+  }
+  .social {
+    .social-text {
+      flex-direction: column;
+      gap: 20px;
+      .social-hr {
+        display: none;
+      }
+    }
+  }
+  footer{
+    .all-footer{
+      .top-footer{
+        flex-direction: column !important;
+        .left-0-top{
+          img{
+            width: 20%;
+          }
+        }
+      }
+      .bottom-footer{
+        flex-direction: column;
+        gap: 10px;
       }
     }
   }

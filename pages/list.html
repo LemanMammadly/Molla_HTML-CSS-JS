@@ -1,0 +1,1328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="shortcut icon"
+      href="https://d-themes.com/react/molla/demo-3/images/icons/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+    <link rel="stylesheet" href="/assets/css/index.css" />
+    <title>Molla | List</title>
+  </head>
+  <body>
+    <!-- HEADER START -->
+    <header>
+      <div class="top-header pt-2">
+        <div class="container">
+          <div
+            class="all-top-header border-hr d-flex justify-content-between align-items-center"
+          >
+            <div class="left-top-header">
+              <a href="#"
+                ><i class="fa-solid fa-phone me-2"></i>Call: +0123 456 789</a
+              >
+            </div>
+            <div class="right-top-header">
+              <div class="dropdown-links-mobile">
+                <button class="dropbtn-links">
+                  Links <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="dropdown-content-links">
+                  <div class="right-top-ul-usd">
+                    <div class="dropdown-usd">
+                      <button class="usd-li usd-write">
+                        USD <i class="fa-solid fa-chevron-down"></i>
+                      </button>
+                      <div class="dropdown-content-usd">
+                        <a href="#">Eur</a>
+                        <a href="#">Usd</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="right-top-ul-lang">
+                    <div class="dropdown-lang">
+                      <button class="lang-li">
+                        English <i class="fa-solid fa-chevron-down"></i>
+                      </button>
+                      <div class="dropdown-content-lang">
+                        <a href="#">English</a>
+                        <a href="#">French</a>
+                        <a href="#">Spanish</a>
+                      </div>
+                    </div>
+                  </div>
+                  <li><a class="sing-log" href="">Sign in / Sign up</a></li>
+                </div>
+              </div>
+              <ul class="right-top-ul mb-0">
+                <div class="right-top-ul-usd">
+                  <div class="dropdown-usd">
+                    <button class="usd-li usd-write">
+                      USD <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="dropdown-content-usd">
+                      <a href="#">Eur</a>
+                      <a href="#">Usd</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="right-top-ul-lang">
+                  <div class="dropdown-lang">
+                    <button class="lang-li">
+                      English <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="dropdown-content-lang">
+                      <a href="#">English</a>
+                      <a href="#">French</a>
+                      <a href="#">Spanish</a>
+                    </div>
+                  </div>
+                </div>
+                <li><a class="sing-log" href="">Sign in / Sign up</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="middle-header py-4">
+        <div class="container">
+          <div
+            class="all-middle-header d-flex align-items-center justify-content-between"
+          >
+            <div class="left-middle-header col-lg-4">
+              <div class="menu-responsive">
+                <i class="fa-solid fa-bars menu-bar-icon"></i>
+              </div>
+              <img class="logo" src="/assets/imgs/logo.png" alt="" />
+            </div>
+            <div class="middle-middle-header col-lg-4">
+              <div class="search-div">
+                <i class="fa-solid fa-magnifying-glass logo-search"></i>
+                <input
+                  class="input-search"
+                  type="text"
+                  placeholder="Search product..."
+                />
+              </div>
+            </div>
+            <div
+              class="right-middle-header col-lg-4 d-flex justify-content-end gap-4 text-center"
+            >
+              <div class="compare d-flex flex-column">
+                <i class="fa-solid fa-shuffle"></i>
+                <span>Compare</span>
+              </div>
+              <div class="wishlist d-flex flex-column">
+                <i class="fa-regular fa-heart"></i>
+                <span>Whishlist</span>
+                <div class="whish-count">0</div>
+              </div>
+              <div class="cart d-flex flex-column">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span>Cart</span>
+                <div class="cart-count">0</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="menu-mobile-sidebar">
+          <div class="all-sidebar">
+            <div class="x-logo-div">
+              <i class="fa-solid fa-xmark x-logo"></i>
+            </div>
+            <div
+              class="search-div-sidebar d-flex align-items-center justify-content-between"
+            >
+              <div class="search-input-div">
+                <input
+                  class="input-search-sidebar"
+                  type="text"
+                  placeholder="Search product..."
+                />
+              </div>
+              <div class="search-logo-div">
+                <i class="fa-solid fa-magnifying-glass logo-search-sidebar"></i>
+              </div>
+            </div>
+            <div class="tabs-sidebar py-4">
+              <div class="tab">
+                <button
+                  class="tablinks active"
+                  onclick="openTab(event, 'tab1')"
+                >
+                  MENU
+                </button>
+                <button class="tablinks" onclick="openTab(event, 'tab2')">
+                  CATEGORIES
+                </button>
+              </div>
+
+              <div id="tab1" class="tabcontent">
+                <div class="accordion" id="accordionExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne"
+                        aria-expanded="false"
+                        aria-controls="collapseOne"
+                      >
+                        HOME
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseOne"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div class="accordion-body">
+                        <ul>
+                          <li><a href="">01 - furniture store</a></li>
+                          <li><a href="">02 - furniture store</a></li>
+                          <li><a href="">03 - electronic store</a></li>
+                          <li><a href="">04 - electronic store</a></li>
+                          <li><a href="">05 - fashion store</a></li>
+                          <li><a href="">06 - fashion store</a></li>
+                          <li><a href="">07 - fashion store</a></li>
+                          <li><a href="">08 - fashion store</a></li>
+                          <li><a href="">09 - fashion store</a></li>
+                          <li><a href="">10 - shoes store</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <hr />
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo"
+                        aria-expanded="false"
+                        aria-controls="collapseTwo"
+                      >
+                        SHOP
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseTwo"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div class="accordion-body">
+                        <ul>
+                          <li><a href="">Shop List</a></li>
+                          <li><a href="">Shop Grid 2 Columns</a></li>
+                          <li><a href="">Shop Grid 3 Columns</a></li>
+                          <li><a href="">Shop Grid 4 Columns</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <hr />
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree"
+                        aria-expanded="false"
+                        aria-controls="collapseThree"
+                      >
+                        PRODUCT
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseThree"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div class="accordion-body">
+                        <ul>
+                          <li><a href="">Default</a></li>
+                          <li><a href="">Centered</a></li>
+                          <li><a href="">Extended Info</a></li>
+                          <li><a href="">Gallery</a></li>
+                          <li><a href="">Sticky Info</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <hr />
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseFour"
+                        aria-expanded="false"
+                        aria-controls="collapseFour"
+                      >
+                        PAGES
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseFour"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div class="accordion-body">
+                        <ul>
+                          <li><a href="">About</a></li>
+                          <li><a href="">Contact</a></li>
+                          <li><a href="">Login</a></li>
+                          <li><a href="">FAQs</a></li>
+                          <li><a href="">Error 404</a></li>
+                          <li><a href="">Coming Soon</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <hr />
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseFive"
+                        aria-expanded="false"
+                        aria-controls="collapseFive"
+                      >
+                        BLOG
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseFive"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div class="accordion-body">
+                        <ul>
+                          <li><a href="">Classic</a></li>
+                          <li><a href="">Listing</a></li>
+                          <li><a href="">Grid</a></li>
+                          <li><a href="">Masonry</a></li>
+                          <li><a href="">Mask</a></li>
+                          <li><a href="">Single Post</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <hr />
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseSix"
+                        aria-expanded="false"
+                        aria-controls="collapseSix"
+                      >
+                        ELEMENTS
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseSix"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div class="accordion-body">
+                        <ul>
+                          <li><a href="">Products</a></li>
+                          <li><a href="">Typography</a></li>
+                          <li><a href="">Titles</a></li>
+                          <li><a href="">Banners</a></li>
+                          <li><a href="">Accordions</a></li>
+                          <li><a href="">Tabs</a></li>
+                          <li><a href="">Testimonials</a></li>
+                          <li><a href="">Blog Posts</a></li>
+                          <li><a href="">Call to Action</a></li>
+                          <li><a href="">Icon Boxes</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <hr />
+                  <div class="tab1-icons">
+                    <div class="all-tab1-icons">
+                      <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                      <a href=""><i class="fa-brands fa-twitter"></i></a>
+                      <a href=""><i class="fa-brands fa-instagram"></i></a>
+                      <a href=""><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div id="tab2" class="tabcontent">
+                <div class="all-tab2">
+                  <ul>
+                    <li><a href="">Electronics</a></li>
+                    <hr />
+                    <li><a href="">Gifts Ideas</a></li>
+                    <hr />
+                    <li><a href="">Beds</a></li>
+                    <hr />
+                    <li><a href="">Lighting</a></li>
+                    <hr />
+                    <li><a href="">Sofas & Sleeper sofas</a></li>
+                    <hr />
+                    <li><a href="">Storage</a></li>
+                    <hr />
+                    <li><a href="">Armchairs & Chaises</a></li>
+                    <hr />
+                    <li><a href="">Decoration</a></li>
+                    <hr />
+                    <li><a href="">Kitchen Cabinets</a></li>
+                    <hr />
+                    <li><a href="">Coffee & Tables</a></li>
+                    <hr />
+                    <li><a href="">Outdoor Furniture</a></li>
+                    <hr />
+                  </ul>
+                </div>
+
+                <div class="tab1-icons">
+                  <div class="all-tab1-icons">
+                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-youtube"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-header">
+        <div class="container">
+          <div
+            class="all-bottom-header d-flex align-items-center justify-content-between col-lg-12"
+          >
+            <div class="left-bottom-header col-lg-3">
+              <div class="dropdown-bottom-header">
+                <div
+                  class="categories d-flex align-items-center justify-content-between"
+                >
+                  <div class="left-categories d-flex align-items-center gap-2">
+                    <i class="fa-solid fa-bars bars-bottom-header ms-3"></i>
+                    <span class="categories-text">Browse Categories</span>
+                  </div>
+                  <div class="right-categories">
+                    <i
+                      style="font-size: 10px; margin-bottom: 10px"
+                      class="fa-solid fa-chevron-down arrow-down-bottom-header me-3"
+                    ></i>
+                  </div>
+                </div>
+
+                <div class="dropdown-content-header">
+                  <div class="all-dropdown-header">
+                    <ul>
+                      <li><a href="">Electronics</a></li>
+                      <hr />
+                      <li><a href="">Gifts Ideas</a></li>
+                      <hr />
+                      <li><a href="">Beds</a></li>
+                      <hr />
+                      <li><a href="">Lighting</a></li>
+                      <hr />
+                      <li><a href="">Sofas & Sleeper sofas</a></li>
+                      <hr />
+                      <li><a href="">Storage</a></li>
+                      <hr />
+                      <li><a href="">Armchairs & Chaises</a></li>
+                      <hr />
+                      <li><a href="">Decoration</a></li>
+                      <hr />
+                      <li><a href="">Kitchen Cabinets</a></li>
+                      <hr />
+                      <li><a href="">Coffee & Tables</a></li>
+                      <hr />
+                      <li><a href="">Outdoor Furniture</a></li>
+                      <hr />
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr class="bottom-hr-left" />
+            <div class="center-bottom-header col-lg-6">
+              <div class="all-center-bottom-header">
+                <ul class="bottom-header-ul">
+                  <div class="all-home-drop-down">
+                    <li class="active home-li">
+                      <span class="center-bottom-header-txt home-txt-hover"
+                        >Home</span
+                      >
+                      <i
+                        style="font-size: 10px"
+                        class="fa-solid fa-chevron-down arrow-down-bottom-center-header"
+                      ></i>
+                    </li>
+                    <div class="all-home-drop-down-all">
+                      <div
+                        class="home-dropdown-content d-flex align-items-center justify-content-center p-4"
+                      >
+                        <div class="container">
+                          <div class="all-home-dropdown-content">
+                            <span class="home-drop-text d-flex"
+                              >CHOOSE YOUR DEMO</span
+                            >
+                            <div
+                              class="all-dropdown-boxes d-flex align-items-center justify-content-between flex-wrap mt-4 gap-4"
+                            >
+                              <div class="dropdown-box col-lg-2">
+                                <div class="top-box">
+                                  <img
+                                    class="top-box-img"
+                                    src="https://d-themes.com/react/molla/demo-3/images/menu/demos/1.jpg"
+                                    alt=""
+                                  />
+                                </div>
+                                <div class="bottom-box text-center">
+                                  <span class="bottom-box-text"
+                                    >01 - furniture store</span
+                                  >
+                                </div>
+                              </div>
+                              <div class="dropdown-box col-lg-2">
+                                <div class="top-box">
+                                  <img
+                                    class="top-box-img"
+                                    src="https://d-themes.com/react/molla/demo-3/images/menu/demos/2.jpg"
+                                    alt=""
+                                  />
+                                </div>
+                                <div class="bottom-box text-center">
+                                  <span class="bottom-box-text"
+                                    >02 - furniture store</span
+                                  >
+                                </div>
+                              </div>
+                              <div class="dropdown-box col-lg-2">
+                                <div class="top-box">
+                                  <img
+                                    class="top-box-img"
+                                    src="https://d-themes.com/react/molla/demo-3/images/menu/demos/3.jpg"
+                                    alt=""
+                                  />
+                                </div>
+                                <div class="bottom-box text-center">
+                                  <span class="bottom-box-text"
+                                    >03 - electronic store</span
+                                  >
+                                </div>
+                              </div>
+                              <div class="dropdown-box col-lg-2">
+                                <div class="top-box">
+                                  <img
+                                    class="top-box-img"
+                                    src="https://d-themes.com/react/molla/demo-3/images/menu/demos/4.jpg"
+                                    alt=""
+                                  />
+                                </div>
+                                <div class="bottom-box text-center">
+                                  <span class="bottom-box-text"
+                                    >04 - electronic store</span
+                                  >
+                                </div>
+                              </div>
+                              <div class="dropdown-box col-lg-2">
+                                <div class="top-box">
+                                  <img
+                                    class="top-box-img"
+                                    src="https://d-themes.com/react/molla/demo-3/images/menu/demos/5.jpg"
+                                    alt=""
+                                  />
+                                </div>
+                                <div class="bottom-box text-center">
+                                  <span class="bottom-box-text"
+                                    >05 - fashion store</span
+                                  >
+                                </div>
+                              </div>
+                              <div class="dropdown-box col-lg-2">
+                                <div class="top-box">
+                                  <img
+                                    class="top-box-img"
+                                    src="https://d-themes.com/react/molla/demo-3/images/menu/demos/6.jpg"
+                                    alt=""
+                                  />
+                                </div>
+                                <div class="bottom-box text-center">
+                                  <span class="bottom-box-text"
+                                    >06 - fashion store</span
+                                  >
+                                </div>
+                              </div>
+                              <div class="dropdown-box col-lg-2">
+                                <div class="top-box">
+                                  <img
+                                    class="top-box-img"
+                                    src="https://d-themes.com/react/molla/demo-3/images/menu/demos/7.jpg"
+                                    alt=""
+                                  />
+                                </div>
+                                <div class="bottom-box text-center">
+                                  <span class="bottom-box-text"
+                                    >07 - fashion store</span
+                                  >
+                                </div>
+                              </div>
+                              <div class="dropdown-box col-lg-2">
+                                <div class="top-box">
+                                  <img
+                                    class="top-box-img"
+                                    src="https://d-themes.com/react/molla/demo-3/images/menu/demos/8.jpg"
+                                    alt=""
+                                  />
+                                </div>
+                                <div class="bottom-box text-center">
+                                  <span class="bottom-box-text"
+                                    >08 - fashion store</span
+                                  >
+                                </div>
+                              </div>
+                              <div class="dropdown-box col-lg-2">
+                                <div class="top-box">
+                                  <img
+                                    class="top-box-img"
+                                    src="https://d-themes.com/react/molla/demo-3/images/menu/demos/9.jpg"
+                                    alt=""
+                                  />
+                                </div>
+                                <div class="bottom-box text-center">
+                                  <span class="bottom-box-text"
+                                    >09 - fashion store</span
+                                  >
+                                </div>
+                              </div>
+                              <div class="dropdown-box col-lg-2">
+                                <div class="top-box">
+                                  <img
+                                    class="top-box-img"
+                                    src="https://d-themes.com/react/molla/demo-3/images/menu/demos/10.jpg"
+                                    alt=""
+                                  />
+                                </div>
+                                <div class="bottom-box text-center">
+                                  <span class="bottom-box-text"
+                                    >10 - shoes store</span
+                                  >
+                                </div>
+                              </div>
+                            </div>
+                            <div class="home-drop-btn-div mt-4 text-center">
+                              <a href="" class="home-drop-button">
+                                VIEW ALL DEMOS
+                                <i class="fa-solid fa-arrow-right"></i
+                              ></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="all-shop-drop-down">
+                    <li class="shop-li">
+                      <span class="center-bottom-header-txt">Shop</span>
+                      <i
+                        style="font-size: 10px"
+                        class="fa-solid fa-chevron-down arrow-down-bottom-center-header"
+                      ></i>
+                    </li>
+                    <div class="all-shop-drop-down-all">
+                      <div class="all-shop-dropdown-content d-flex gap-3">
+                        <div class="left-shop-dropdown d-flex flex-column">
+                          <div class="top-ul-head-left d-flex flex-column my-2">
+                            <span class="shop-sidebar-text"
+                              >Shop Width Sidebar</span
+                            >
+                            <ul class="d-flex flex-column shop-ul">
+                              <li class="mt-2"><a href="">Shop List</a></li>
+                              <li><a href="">Shop Grid 2 Columns</a></li>
+                              <li><a href="">Shop Grid 3 Columns</a></li>
+                              <li><a href="">Shop Grid 4 Columns</a></li>
+                              <li>
+                                <a href=""
+                                  >Shop Market
+                                  <span class="shop-new">NEW</span></a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                          <div
+                            class="bottom-ul-head-left d-flex flex-column my-2"
+                          >
+                            <span class="shop-nosidebar-text"
+                              >Shop No Sidebar</span
+                            >
+                            <ul class="d-flex flex-column shop-ul">
+                              <li class="mt-2">
+                                <a href="">Shop Boxed No Sidebar</a>
+                              </li>
+                              <li>
+                                <a href=""
+                                  >Shop Fullwidth No Sidebar
+                                  <span class="shop-hot">HOT</span>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="right-shop-dropdown">
+                          <div
+                            class="top-ul-head-right d-flex flex-column my-2"
+                          >
+                            <span class="shop-sidebar-text"
+                              >Product Category</span
+                            >
+                            <ul class="d-flex flex-column shop-ul">
+                              <li class="mt-2">
+                                <a href="">Product Category Boxed</a>
+                              </li>
+                              <li>
+                                <a href=""
+                                  >Product Category Fullwidth
+                                  <span class="shop-new">NEW</span></a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                          <div
+                            class="bottom-ul-head-right d-flex flex-column my-2"
+                          >
+                            <span class="shop-nosidebar-text">Shop Pages</span>
+                            <ul class="d-flex flex-column shop-ul">
+                              <li class="mt-2">
+                                <a href="">Cart</a>
+                              </li>
+                              <li>
+                                <a href="">Checkout </a>
+                              </li>
+                              <li>
+                                <a href="">Wishlist </a>
+                              </li>
+                              <li>
+                                <a href="">My Account </a>
+                              </li>
+                              <li>
+                                <a href="">Lookbook </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="img-shop-dropdown">
+                          <img
+                            style="cursor: pointer"
+                            class="img-fluid"
+                            src="https://d-themes.com/react/molla/demo-3/images/menu/banner-1.jpg"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="all-product-drop-down">
+                    <li class="prod-li">
+                      <span class="center-bottom-header-txt">Product</span>
+                      <i
+                        style="font-size: 10px"
+                        class="fa-solid fa-chevron-down arrow-down-bottom-center-header"
+                      ></i>
+                    </li>
+                    <div class="all-prod-drop-down-all">
+                      <div class="all-prod-dropdown-content d-flex gap-4">
+                        <div
+                          class="all-prod-context-left d-flex flex-column my-2"
+                        >
+                          <span class="prod-sidebar-text">Product Details</span>
+                          <ul class="d-flex flex-column prod-ul">
+                            <li class="mt-2"><a href="">Default</a></li>
+                            <li><a href="">Centered</a></li>
+                            <li>
+                              <a href=""
+                                >Extented Info
+                                <span class="new-prod">NEW</span></a
+                              >
+                            </li>
+                            <li><a href="">Gallery</a></li>
+                            <li><a href="">Sticky Info</a></li>
+                            <li><a href="">Boxed Width Sidebar</a></li>
+                            <li><a href="">Full Width</a></li>
+                            <li><a href="">Masonry Sticky Info</a></li>
+                          </ul>
+                        </div>
+                        <div class="all-prod-context-right">
+                          <img
+                            src="https://d-themes.com/react/molla/demo-3/images/menu/banner-2.jpg"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="all-pages-drop-down">
+                    <li class="pages-li">
+                      <span class="center-bottom-header-txt">Pages</span>
+                      <i
+                        style="font-size: 10px"
+                        class="fa-solid fa-chevron-down arrow-down-bottom-center-header"
+                      ></i>
+                    </li>
+                    <div class="all-pages-drop-down-all">
+                      <div
+                        class="all-pages-dropdown-content d-flex flex-column"
+                      >
+                        <div class="all-pages-context d-flex flex-column my-2">
+                          <ul class="d-flex flex-column pages-ul">
+                            <li class="mt-2">
+                              <a href="">About</a>
+                            </li>
+                            <li>
+                              <a href="">Contact</a>
+                            </li>
+                            <li><a href="">FAQs</a></li>
+                            <li><a href="">Error 404</a></li>
+                            <li><a href="">Coming Soon</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="all-blog-drop-down">
+                    <li class="blog-li">
+                      <span class="center-bottom-header-txt">Blog</span>
+                      <i
+                        style="font-size: 10px"
+                        class="fa-solid fa-chevron-down arrow-down-bottom-center-header"
+                      ></i>
+                    </li>
+                    <div class="all-blog-drop-down-all">
+                      <div class="all-blog-dropdown-content d-flex flex-column">
+                        <div class="all-blog-context d-flex flex-column my-2">
+                          <ul class="d-flex flex-column blog-ul">
+                            <li class="mt-2">
+                              <a href="">Classic</a>
+                            </li>
+                            <li>
+                              <a href="">Listing</a>
+                            </li>
+                            <li><a href="">Grid</a></li>
+                            <li><a href="">Masonry</a></li>
+                            <li><a href="">Mask</a></li>
+                            <li><a href="">Single Post</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="all-elements-drop-down">
+                    <li class="elem-li">
+                      <span class="center-bottom-header-txt">Elements</span>
+                      <i
+                        style="font-size: 10px"
+                        class="fa-solid fa-chevron-down arrow-down-bottom-center-header"
+                      ></i>
+                    </li>
+                    <div class="all-elements-drop-down-all">
+                      <div
+                        class="all-elements-dropdown-content d-flex flex-column"
+                      >
+                        <div
+                          class="all-elements-context d-flex flex-column my-2"
+                        >
+                          <ul class="d-flex flex-column elements-ul">
+                            <li class="mt-2">
+                              <a href="">Products</a>
+                            </li>
+                            <li>
+                              <a href="">Typography</a>
+                            </li>
+                            <li><a href="">Titles</a></li>
+                            <li><a href="">Banners</a></li>
+                            <li><a href="">Mask</a></li>
+                            <li><a href="">Product Category</a></li>
+                            <li><a href="">Video Banners</a></li>
+                            <li><a href="">Buttons</a></li>
+                            <li><a href="">Accordions</a></li>
+                            <li><a href="">Tabs</a></li>
+                            <li><a href="">Testimonials</a></li>
+                            <li><a href="">Blog Posts</a></li>
+                            <li><a href="">Call to Action</a></li>
+                            <li><a href="">Icon Boxes</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </ul>
+              </div>
+            </div>
+            <hr class="bottom-hr-right" />
+            <div class="right-bottom-header col-lg-2 text-end">
+              <div
+                class="all-right-bottom-header d-flex align-items-center justify-content-center gap-3"
+              >
+                <i class="fa-regular fa-lightbulb"></i>
+                <div class="all-right-bottom-texts">
+                  <span class="all-right-bottom-header-text-left"
+                    >Clearance</span
+                  >
+                  <span class="all-right-bottom-header-text-right"
+                    >Up to 30% Off</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="all-bottom-header-hr" />
+      </div>
+    </header>
+    <!-- HEADER END -->
+
+    <!-- List HEAD START -->
+
+    <section class="list-head">
+      <div class="all-list-head text-center">
+        <h1 class="list-head-h1">List</h1>
+        <span class="list-head-span">Shop</span>
+      </div>
+    </section>
+
+    <!-- List HEAD END -->
+
+    <!-- List Bread START -->
+
+    <section class="bread-list p-3">
+      <div class="container">
+        <nav aria-label="breadcrumb" style="margin-bottom: 0">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item"><a href="list.html">Shop</a></li>
+            <li class="breadcrumb-item active" aria-current="page">List</li>
+          </ol>
+        </nav>
+      </div>
+      <hr style="color: rgba(128, 128, 128, 0.581); margin: 0; padding: 0" />
+    </section>
+
+    <!-- List Bread END -->
+
+    <!-- List Main START -->
+
+    <section class="list-main p-4">
+      <div class="container">
+        <div class="all-list-main d-flex">
+          <div class="left-list-main col-lg-3">
+            <div class="left-list-main-top d-flex justify-content-between">
+              <div class="left-list-main-top-left">
+                <span>Filters:</span>
+              </div>
+              <div class="left-list-main-top-right">
+                <span>Clean All</span>
+              </div>
+            </div>
+            <hr style="color: rgba(128, 128, 128, 0.436)" />
+            <div class="left-list-main-bottom">
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                    >
+                      Category
+                    </button>
+                    <hr style="margin: 0;padding: 0;color: rgba(128, 128, 128, 0.436)"/>
+                  </h2>
+                  <div
+                    id="collapseOne"
+                    class="accordion-collapse collapse show"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body list-accordion">
+                      <ul class="list-ul-left d-flex flex-column gap-2">
+                        <li
+                          class="d-flex align-items-center justify-content-between"
+                        >
+                          <a href="">Furniture</a>
+                          <span class="list-num">8</span>
+                        </li>
+                        <li
+                          class="d-flex align-items-center justify-content-between"
+                        >
+                          <a href="">Coffee & Tables</a>
+                          <span class="list-num">1</span>
+                        </li>
+                        <li
+                          class="d-flex align-items-center justify-content-between"
+                        >
+                          <a href="">Lighting</a>
+                          <span class="list-num">3</span>
+                        </li>
+                        <li
+                          class="d-flex align-items-center justify-content-between"
+                        >
+                          <a href="">Decoration</a>
+                          <span class="list-num">5</span>
+                        </li>
+                        <li
+                          class="d-flex align-items-center justify-content-between"
+                        >
+                          <a href="">Electronics</a>
+                          <span class="list-num">1</span>
+                        </li>
+                        <li
+                          class="d-flex align-items-center justify-content-between"
+                        >
+                          <a href="">Beds</a>
+                          <span class="list-num">2</span>
+                        </li>
+                        <li
+                          class="d-flex align-items-center justify-content-between"
+                        >
+                          <a href="">Armchairs & Chaises</a>
+                          <span class="list-num">3</span>
+                        </li>
+                        <li
+                          class="d-flex align-items-center justify-content-between"
+                        >
+                          <a href="">Sofas & Sleeper Sofas</a>
+                          <span class="list-num">1</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="collapseTwo"
+                    >
+                      Size
+                    </button>
+                    <hr style="margin: 0;padding: 0;color: rgba(128, 128, 128, 0.436)"/>
+                  </h2>
+                  <div
+                    id="collapseTwo"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <div class="size-all d-flex flex-column gap-2">
+                        <div class="size-box">
+                          <input type="checkbox" name="" id="check" />
+                          <label for="check">Extra Small</label>
+                        </div>
+                        <div class="size-box">
+                          <input type="checkbox" name="" id="check1" />
+                          <label for="check1">Small</label>
+                        </div>
+                        <div class="size-box">
+                          <input type="checkbox" name="" id="check2" />
+                          <label for="check2">Medium</label>
+                        </div>
+                        <div class="size-box">
+                          <input type="checkbox" name="" id="check3" />
+                          <label for="check3">Large</label>
+                        </div>
+                        <div class="size-box">
+                          <input type="checkbox" name="" id="check4" />
+                          <label for="check4">Extra Large</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseThree"
+                      aria-expanded="false"
+                      aria-controls="collapseThree"
+                    >
+                      Color
+                    </button>
+                    <hr style="margin: 0;padding: 0;color: rgba(128, 128, 128, 0.436)"/>
+                  </h2>
+                  <div
+                    id="collapseThree"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <div class="color-all d-flex gap-2">
+                        <a class="yellow" href=""></a>
+                        <a class="blue" href=""></a>
+                        <a class="purple" href=""></a>
+                        <a class="black" href=""></a>
+                        <a class="green" href=""></a>
+                        <a class="red" href=""></a>
+                        <a class="gray" href=""></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseFour"
+                      aria-expanded="false"
+                      aria-controls="collapseFour"
+                    >
+                      Brand
+                    </button>
+                    <hr style="margin: 0;padding: 0;color: rgba(128, 128, 128, 0.436)"/>
+                  </h2>
+                  <div
+                    id="collapseFour"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <div class="brand-all d-flex flex-column gap-2">
+                        <div class="brand-box">
+                          <input type="checkbox" name="" id="check" />
+                          <label for="check">Next</label>
+                        </div>
+                        <div class="brand-box">
+                          <input type="checkbox" name="" id="check1" />
+                          <label for="check1">River Island</label>
+                        </div>
+                        <div class="brand-box">
+                          <input type="checkbox" name="" id="check2" />
+                          <label for="check2">Geox</label>
+                        </div>
+                        <div class="brand-box">
+                          <input type="checkbox" name="" id="check3" />
+                          <label for="check3">New Balance</label>
+                        </div>
+                        <div class="brand-box">
+                          <input type="checkbox" name="" id="check4" />
+                          <label for="check4">UGG</label>
+                        </div>
+                        <div class="brand-box">
+                          <input type="checkbox" name="" id="check4" />
+                          <label for="check4">F&F</label>
+                        </div>
+                        <div class="brand-box">
+                          <input type="checkbox" name="" id="check4" />
+                          <label for="check4">Nike</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseFive"
+                      aria-expanded="false"
+                      aria-controls="collapseFive"
+                    >
+                      Price
+                    </button>
+                    <hr style="margin: 0;padding: 0;color: rgba(128, 128, 128, 0.436)"/>
+                  </h2>
+                  <div
+                    id="collapseFive"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <div class="price-all d-flex flex-column  gap-2">
+                        <div
+                          class="top-price d-flex align-items-center justify-content-between"
+                        >
+                          <span class="range-price"
+                            >Price Range: <span class="start-range">0$</span>
+                            <span class="s-e-range">-</span>
+                            <span class="end-range">$1000</span></span
+                          >
+                          <span class="filter-price">Filter</span>
+                        </div>
+                        <div class="bottom-price-range">
+                          <div class="range-slider">
+                            <input
+                              type="range"
+                              min="0"
+                              max="100"
+                              value="0"
+                              step="1"
+                              id="rangeInput"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="right-list-main col-lg-9"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- List Main END -->
+
+    <!-- Footer START -->
+
+    <footer class="p-4">
+      <div class="container">
+        <div class="all-footer">
+          <div class="top-footer d-flex justify-content-between gap-3">
+            <div class="left-0-footer col-lg-3 d-flex flex-column gap-3">
+              <div class="left-0-top">
+                <img
+                  class="img-fluid"
+                  src="https://d-themes.com/react/molla/demo-3/images/logo-footer.png"
+                  alt=""
+                />
+              </div>
+              <div class="left-0-center">
+                <p class="left-0-center-p">
+                  Praesent dapibus, neque id cursus ucibus, tortor neque egestas
+                  augue, eu vulputate magna eros eu erat.
+                </p>
+              </div>
+              <div class="left-0-bottom">
+                <div
+                  class="tel d-flex align-items-center justify-content-center gap-2"
+                >
+                  <i class="fa-solid fa-phone"></i>
+                  <div class="number">
+                    <div class="top-num">
+                      <p>Got Question? Call us 24/7</p>
+                    </div>
+                    <div class="bot-num">
+                      <span>+0123 456 789</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="left-1-footer col-lg-3">
+              <h4 class="links-ul-footer">Useful Links</h4>
+              <ul>
+                <li><a class="links-a" href="">About Molla</a></li>
+                <li><a class="links-a" href="">Our Services</a></li>
+                <li><a class="links-a" href="">How to shop on Molla</a></li>
+                <li><a class="links-a" href="">FAQ</a></li>
+                <li><a class="links-a" href="">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="right-1-footer col-lg-3">
+              <h4 class="links-ul-footer">Customer Service</h4>
+              <ul>
+                <li><a class="links-a" href="">Payment Methods</a></li>
+                <li><a class="links-a" href="">Money-back guarantee!</a></li>
+                <li><a class="links-a" href="">Returns</a></li>
+                <li><a class="links-a" href="">Shipping</a></li>
+                <li><a class="links-a" href="">Terms and conditions</a></li>
+                <li><a class="links-a" href="">Privacy Policy</a></li>
+              </ul>
+            </div>
+
+            <div class="right-0-footer col-lg-3">
+              <h4 class="links-ul-footer">My Account</h4>
+              <ul>
+                <li><a class="links-a" href="">Sign in</a></li>
+                <li><a class="links-a" href="">View Cart</a></li>
+                <li><a class="links-a" href="">My Wishlist</a></li>
+                <li><a class="links-a" href="">Track My Order</a></li>
+                <li><a class="links-a" href="">Help</a></li>
+              </ul>
+            </div>
+          </div>
+          <hr style="color: rgba(128, 128, 128, 0.468)" />
+          <div
+            class="bottom-footer d-flex align-items-center justify-content-between"
+          >
+            <div class="left-bottom-footer">
+              <p>Copyright © 2023 Molla Store. All Rights Reserved.</p>
+            </div>
+            <div class="right-bottom-footer">
+              <img
+                src="https://d-themes.com/react/molla/demo-3/images/payments.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Footer END -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <script src="/js/index.js"></script>
+  </body>
+</html>
