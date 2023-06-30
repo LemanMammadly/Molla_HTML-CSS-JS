@@ -1,3 +1,8 @@
+window.addEventListener("load", function () {
+  openTab(event, "tab1");
+});
+
+
 function openTab(evt, tabName) {
   var i, tabcontent, tablinks;
   tabcontent = document.querySelectorAll(".tabcontent");
@@ -12,16 +17,13 @@ function openTab(evt, tabName) {
   evt.currentTarget.className += " active";
 }
 
-window.addEventListener("load", function () {
-  openTab(event, "tab1");
-});
 
 $(document).ready(function () {
   $(".owl-carousel").owlCarousel({
     loop: true,
     margin: 10,
     dots:false,
-    nav: true,
+    nav: false,
     responsive: {
       0: {
         items: 1,
@@ -34,7 +36,6 @@ $(document).ready(function () {
       },
     },
   });
-  
 
   $(".menu-bar-icon").click(function () {
     $(".menu-mobile-sidebar").animate({ left: "0" }, 500);
@@ -250,6 +251,25 @@ function openTab1(evt, tabName) {
     tabcontent[i].style.display = "none";
   }
   tablinks = document.getElementsByClassName("tablinks-featured");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(tabName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+
+window.addEventListener("load", function () {
+  openTab2(event, "tab11");
+});
+
+function openTab2(evt, tabName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent-trending");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks-trend");
   for (i = 0; i < tablinks.length; i++) {
     tablinks[i].className = tablinks[i].className.replace(" active", "");
   }

@@ -269,6 +269,31 @@
       }
     }
   }
+
+  .deal .bottom-deal {
+    flex-direction: column;
+    .right-bottom-deal{
+      justify-content: center;
+    }
+  }
+  .trending{
+    .all-trending{
+      flex-direction: column;
+      .all-left-trending{
+        .bottom-all-left-trend{
+          display: none;
+        }
+        .top-all-left-trend{
+          text-align: center;
+        }
+      }
+      // .tab-trending{
+      //   overflow: hidden;
+      //   text-align: center;
+      //   align-items: center;
+      // }
+    }
+  }
 }
 
 @media only screen and (max-width: 768px) {
