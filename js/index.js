@@ -1,8 +1,3 @@
-window.addEventListener("load", function () {
-  openTab(event, "tab1");
-});
-
-
 function openTab(evt, tabName) {
   var i, tabcontent, tablinks;
   tabcontent = document.querySelectorAll(".tabcontent");
@@ -16,6 +11,13 @@ function openTab(evt, tabName) {
   document.getElementById(tabName).style.display = "block";
   evt.currentTarget.className += " active";
 }
+
+
+window.addEventListener("onload", function () {
+  openTab1(this.event,"tabs1");
+});
+
+
 
 
 $(document).ready(function () {
@@ -240,13 +242,11 @@ li.forEach((item) => {
 });
 
 
-window.addEventListener("load", function () {
-  openTab1(event, "tabs1");
-});
+
 
 function openTab1(evt, tabName) {
   let i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
+  tabcontent = document.getElementsByClassName("tabcontent-featured");
   for (i = 0; i < tabcontent.length; i++) {
     tabcontent[i].style.display = "none";
   }
@@ -259,9 +259,12 @@ function openTab1(evt, tabName) {
 }
 
 
-window.addEventListener("load", function () {
-  openTab2(event, "tab11");
+window.addEventListener("onload", function () {
+  openTab1(this.event,"tabs1");
 });
+
+
+
 
 function openTab2(evt, tabName) {
   var i, tabcontent, tablinks;
@@ -277,6 +280,9 @@ function openTab2(evt, tabName) {
   evt.currentTarget.className += " active";
 }
 
+window.addEventListener("onload", function () {
+  openTab2(event, "tab11");
+});
 
 
 

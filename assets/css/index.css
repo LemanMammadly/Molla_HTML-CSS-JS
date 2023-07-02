@@ -958,7 +958,7 @@ header .bottom-header .all-bottom-header .right-bottom-header .all-right-bottom-
   border-bottom: 1px solid;
   color: #333;
 }
-.featured .all-featured .all-featured-tab .tabcontent {
+.featured .all-featured .all-featured-tab .tabcontent-featured {
   display: none;
   padding: 6px 12px;
   border-top: none;
@@ -2854,6 +2854,145 @@ footer .all-footer .bottom-footer .left-bottom-footer p {
   color: #fff;
 }
 
+.about-brand .all-about-brand .top-about-brand {
+  text-align: center;
+}
+.about-brand .all-about-brand .top-about-brand h2 {
+  font-size: 24px;
+  color: #333;
+  font-weight: 400;
+}
+.about-brand .all-about-brand .top-about-brand p {
+  font-size: 14px;
+  color: #777;
+}
+
+.contact-head {
+  background-image: url("https://d-themes.com/react/molla/demo-3/images/page-header-bg.jpg");
+  padding: 50px 0;
+}
+.contact-head .all-contact-head {
+  text-align: center;
+}
+.contact-head .all-contact-head h2 {
+  font-size: 40px;
+  color: #333;
+  font-weight: 300;
+}
+.contact-head .all-contact-head span {
+  font-weight: 300;
+  font-size: 20px;
+  color: #fcb941;
+}
+
+.bread-contact .breadcrumb li {
+  color: #777;
+  font-size: 14px;
+  font-weight: 300;
+}
+.bread-contact .breadcrumb li a {
+  text-decoration: none;
+  color: #777;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.contact-map {
+  width: 100% !important;
+}
+
+.office .all-office {
+  text-align: center;
+}
+.office .all-office h3 {
+  font-size: 16px;
+  color: #333;
+  font-weight: 400;
+}
+.office .all-office address {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 0;
+}
+.office .all-office a {
+  font-size: 14px;
+  color: #666;
+  text-decoration: none;
+}
+.office .all-office .icons {
+  padding-top: 22px;
+}
+.office .all-office .icons .fb {
+  color: #8e79ed;
+}
+.office .all-office .icons .tw {
+  color: #80c7e4;
+}
+.office .all-office .icons .ins {
+  color: #e792ae;
+}
+.office .all-office .icons .ytb {
+  color: red;
+}
+.office .all-office .icons .pnt {
+  color: red;
+}
+
+.contacts .all-contacts h2 {
+  font-size: 24px;
+  color: #333;
+}
+.contacts .all-contacts .lead {
+  color: #fcb941 !important;
+  font-size: 16px;
+}
+.contacts .all-contacts p {
+  font-size: 14px;
+  color: #777;
+}
+.contacts .all-contacts form input {
+  background-color: #fafafa;
+  margin: 10px 0;
+}
+.contacts .all-contacts form textarea {
+  background-color: #fafafa;
+  margin: 20px 0;
+}
+.contacts .all-contacts form input,
+.contacts .all-contacts form select,
+.contacts .all-contacts form textarea {
+  border-radius: 0;
+  outline: none;
+  border: 1px solid rgba(128, 128, 128, 0.145);
+  box-shadow: none;
+}
+.contacts .all-contacts form input::-moz-placeholder, .contacts .all-contacts form select::-moz-placeholder, .contacts .all-contacts form textarea::-moz-placeholder {
+  color: rgba(119, 119, 119, 0.5411764706);
+}
+.contacts .all-contacts form input::placeholder,
+.contacts .all-contacts form select::placeholder,
+.contacts .all-contacts form textarea::placeholder {
+  color: rgba(119, 119, 119, 0.5411764706);
+}
+.contacts .all-contacts form input:focus,
+.contacts .all-contacts form select:focus,
+.contacts .all-contacts form textarea:focus {
+  border-color: #fcb941;
+}
+.contacts .all-contacts button {
+  border-radius: 0;
+  padding: 10px 30px;
+  margin-top: 30px;
+  color: #fcb941;
+  background-color: transparent;
+  border: 1px solid #fcb941;
+  transition: 0.5s;
+}
+.contacts .all-contacts button:hover {
+  color: #fff;
+  background-color: #fcb941;
+}
+
 @media only screen and (max-width: 992px) {
   header .top-header .container {
     max-width: inherit;
@@ -3190,6 +3329,11 @@ footer .all-footer .bottom-footer .left-bottom-footer p {
     padding: 0;
     flex-direction: row !important;
     gap: 2px !important;
+  }
+  .office .all-office {
+    flex-direction: column !important;
+    gap: 30px;
+    align-items: center;
   }
 }
 @media only screen and (max-width: 768px) {

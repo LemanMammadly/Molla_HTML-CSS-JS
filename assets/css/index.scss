@@ -1043,7 +1043,7 @@ header {
         border-bottom: 1px solid;
         color: #333;
       }
-      .tabcontent {
+      .tabcontent-featured {
         display: none;
         padding: 6px 12px;
         border-top: none;
@@ -3206,15 +3206,163 @@ footer {
         }
       }
     }
-    a{
+    a {
       text-decoration: none;
       color: #fcb941;
       padding: 10px 20px;
       border: 1px solid #fcb941;
-      transition: .5s;
-      &:hover{
+      transition: 0.5s;
+      &:hover {
         background-color: #fcb941;
         color: #fff;
+      }
+    }
+  }
+}
+
+.about-brand {
+  .all-about-brand {
+    .top-about-brand {
+      text-align: center;
+      h2 {
+        font-size: 24px;
+        color: #333;
+        font-weight: 400;
+      }
+      p {
+        font-size: 14px;
+        color: #777;
+      }
+    }
+  }
+}
+
+.contact-head {
+  background-image: url("https://d-themes.com/react/molla/demo-3/images/page-header-bg.jpg");
+  padding: 50px 0;
+  .all-contact-head {
+    text-align: center;
+    h2 {
+      font-size: 40px;
+      color: #333;
+      font-weight: 300;
+    }
+    span {
+      font-weight: 300;
+      font-size: 20px;
+      color: #fcb941;
+    }
+  }
+}
+
+.bread-contact {
+  .breadcrumb {
+    li {
+      color: #777;
+      font-size: 14px;
+      font-weight: 300;
+      a {
+        text-decoration: none;
+        color: #777;
+        font-size: 14px;
+        font-weight: 300;
+      }
+    }
+  }
+}
+
+.contact-map {
+  width: 100% !important;
+}
+
+.office {
+  .all-office {
+    text-align: center;
+    h3 {
+      font-size: 16px;
+      color: #333;
+      font-weight: 400;
+    }
+    address {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 0;
+    }
+    a {
+      font-size: 14px;
+      color: #666;
+      text-decoration: none;
+    }
+    .icons {
+      padding-top: 22px;
+      .fb {
+        color: #8e79ed;
+      }
+      .tw {
+        color: #80c7e4;
+      }
+      .ins {
+        color: #e792ae;
+      }
+      .ytb {
+        color: red;
+      }
+      .pnt {
+        color: red;
+      }
+    }
+  }
+}
+
+.contacts {
+  .all-contacts {
+    h2 {
+      font-size: 24px;
+      color: #333;
+    }
+    .lead {
+      color: #fcb941 !important;
+      font-size: 16px;
+    }
+    p {
+      font-size: 14px;
+      color: #777;
+    }
+    form {
+      input {
+        background-color: #fafafa;
+        margin: 10px 0;
+      }
+      textarea{
+        background-color: #fafafa;
+        margin: 20px 0;
+      }
+    }
+    form input,
+    form select,
+    form textarea {
+      border-radius: 0;
+      outline: none;
+      border: 1px solid rgba(128, 128, 128, 0.145);
+      box-shadow: none;
+      &::placeholder{
+        color: #7777778a;
+      }
+      &:focus{
+        border-color: #fcb941;
+      }
+    }
+    button{
+      border-radius: 0;
+      padding: 10px 30px;
+      margin-top: 30px;
+      color: #fcb941;
+      background-color: transparent;
+      border: 1px solid #fcb941;
+      transition: .5s;
+      &:hover{
+        color: #fff;
+        background-color: #fcb941;
       }
     }
   }
