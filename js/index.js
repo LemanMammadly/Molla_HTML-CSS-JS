@@ -259,7 +259,7 @@ function openTab1(evt, tabName) {
 }
 
 
-window.addEventListener("onload", function () {
+window.addEventListener("load", function () {
   openTab1(this.event,"tabs1");
 });
 
